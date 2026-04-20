@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Downloads\\HYMAP COLAB\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj": {}
+    "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Downloads\\HYMAP COLAB\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj": {
+    "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Downloads\\HYMAP COLAB\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
         "projectName": "HYMAPSOPIR",
-        "projectPath": "\\\\Mac\\Home\\Downloads\\HYMAP COLAB\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
-        "packagesPath": "C:\\Users\\firdaus-macbook\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Downloads\\HYMAP COLAB\\HYMAPSOPIR\\HYMAPSOPIR\\obj\\",
+        "projectPath": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
+        "packagesPath": "C:\\Users\\ASUS ROG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\firdaus-macbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
