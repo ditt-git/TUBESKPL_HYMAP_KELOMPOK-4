@@ -1,0 +1,17 @@
+# Visual Studio files
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.user
+*.suo
+*.cache
+*.dtbcache.v2
+
+# Build folders
+**/obj/
+**/bin/
+
+# User-specific files
+*.sln.docstates
