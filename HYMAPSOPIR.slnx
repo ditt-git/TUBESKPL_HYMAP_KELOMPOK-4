@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="API/API.csproj" Id="8c174750-b596-46af-ac4d-501d48994b91" />
+  <Project Path="HYMAPSOPIR/HYMAPSOPIR.csproj" />
+  <Project Path="Library/Library.csproj" Id="9fd3ecdf-9808-491e-ab82-bff699c83cec" />
+</Solution>
