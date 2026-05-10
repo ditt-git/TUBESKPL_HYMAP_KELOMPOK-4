@@ -1,0 +1,65 @@
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.Form1.resources
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.GenerateResource.cache
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfo.cs
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.exe
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.deps.json
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.runtimeconfig.json
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.dll
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.pdb
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.dll
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\refint\HYMAPSOPIR.dll
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
+\\Mac\Home\Documents\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\ref\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.exe
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.deps.json
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.runtimeconfig.json
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.Form1.resources
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.GenerateResource.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.GeneratedMSBuildEditorConfig.editorconfig
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfoInputs.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfo.cs
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.CoreCompileInputs.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\refint\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\ref\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.FormLogin.resources
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.exe
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.dll
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.deps.json
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.runtimeconfig.json
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.Form1.resources
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.FormLogin.resources
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfoInputs.cache
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfo.cs
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.dll
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\refint\HYMAPSOPIR.dll
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
+\\Mac\Home\Downloads\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.exe
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.deps.json
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.runtimeconfig.json
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.dll
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.pdb
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.Form1.resources
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.FormLogin.resources
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.GenerateResource.cache
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.GeneratedMSBuildEditorConfig.editorconfig
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfoInputs.cache
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfo.cs
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.CoreCompileInputs.cache
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.dll
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\refint\HYMAPSOPIR.dll
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
+C:\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\ref\HYMAPSOPIR.dll
