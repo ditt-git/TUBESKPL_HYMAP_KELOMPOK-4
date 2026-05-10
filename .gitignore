@@ -1,4 +1,4 @@
-# Visual Studio Cache & Temporary Files
+# Visual Studio files
 .vs/
 [Dd]ebug/
 [Rr]elease/
@@ -9,10 +9,9 @@ x86/
 *.cache
 *.dtbcache.v2
 
-# Build Folders
+# Build folders
 **/obj/
 **/bin/
 
-# Solution User Files
+# User-specific files
 *.sln.docstates
-*.slnx
