@@ -34,17 +34,18 @@
             button1 = new Button();
             label1 = new Label();
             label2 = new Label();
+            LabelVersi = new Label();
             SuspendLayout();
             // 
             // LabelJudul
             // 
             LabelJudul.AutoSize = true;
             LabelJudul.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LabelJudul.Location = new Point(145, 70);
+            LabelJudul.Location = new Point(114, 71);
             LabelJudul.Name = "LabelJudul";
-            LabelJudul.Size = new Size(82, 25);
+            LabelJudul.Size = new Size(145, 25);
             LabelJudul.TabIndex = 0;
-            LabelJudul.Text = "HYMAP";
+            LabelJudul.Text = "HYMAP-SOPIR";
             LabelJudul.Click += LabelJudul_Click;
             // 
             // textBox1
@@ -64,6 +65,7 @@
             textBox2.Size = new Size(264, 23);
             textBox2.TabIndex = 2;
             textBox2.UseSystemPasswordChar = true;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button1
             // 
@@ -94,12 +96,22 @@
             label2.TabIndex = 5;
             label2.Text = "Password";
             // 
+            // LabelVersi
+            // 
+            LabelVersi.AutoSize = true;
+            LabelVersi.Location = new Point(171, 108);
+            LabelVersi.Name = "LabelVersi";
+            LabelVersi.Size = new Size(31, 15);
+            LabelVersi.TabIndex = 6;
+            LabelVersi.Text = "versi";
+            // 
             // FormLogin
             // 
             AcceptButton = button1;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(372, 450);
+            Controls.Add(LabelVersi);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
@@ -108,7 +120,7 @@
             Controls.Add(LabelJudul);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FormLogin";
-            Text = "FormLogin";
+            Text = "HYMAP";
             Load += FormLogin_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -122,5 +134,6 @@
         private Button button1;
         private Label label1;
         private Label label2;
+        private Label LabelVersi;
     }
 }

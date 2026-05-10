@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Zo9Wek4qy1k=",
+  "success": true,
+  "projectFilePath": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\API\\API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\firdaus-macbook\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "C:\\Users\\firdaus-macbook\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\firdaus-macbook\\.nuget\\packages\\scalar.aspnetcore\\2.14.11\\scalar.aspnetcore.2.14.11.nupkg.sha512"
+  ],
+  "logs": []
+}

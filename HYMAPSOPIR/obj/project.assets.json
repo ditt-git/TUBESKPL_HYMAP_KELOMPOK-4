@@ -1,11 +1,160 @@
 {
   "version": 3,
   "targets": {
-    "net10.0-windows7.0": {}
+    "net10.0-windows7.0": {
+      "Microsoft.AspNetCore.OpenApi/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "2.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.OpenApi/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Scalar.AspNetCore/2.14.11": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "API/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Library": "1.0.0",
+          "Microsoft.AspNetCore.OpenApi": "10.0.5",
+          "Scalar.AspNetCore": "2.14.11"
+        },
+        "compile": {
+          "bin/placeholder/API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/API.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/10.0.5": {
+      "sha512": "vTcxIfOPyfFbYk1g8YcXJfkMnlEWVkSnnjxcZLy60zgwiHMRf2SnZR+9E4HlpwKxgE3yfKMOti8J6WfKuKsw6w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.OpenApi.SourceGenerators.dll",
+        "build/Microsoft.AspNetCore.OpenApi.targets",
+        "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net10.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/2.0.0": {
+      "sha512": "GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
+      "type": "package",
+      "path": "microsoft.openapi/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Microsoft.OpenApi.dll",
+        "lib/net8.0/Microsoft.OpenApi.pdb",
+        "lib/net8.0/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.2.0.0.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Scalar.AspNetCore/2.14.11": {
+      "sha512": "EthfC0++GjWX5JB84OUTsNlzRMr8v6zGinx8i2msKWitAkvGbvjBz7ET9XoUis4Z3M+iH6jIJ66uUGzZqmrSGg==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.14.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.14.11.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
+    "API/1.0.0": {
+      "type": "project",
+      "path": "../API/API.csproj",
+      "msbuildProject": "../API/API.csproj"
+    },
+    "Library/1.0.0": {
+      "type": "project",
+      "path": "../Library/Library.csproj",
+      "msbuildProject": "../Library/Library.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0-windows7.0": []
+    "net10.0-windows7.0": [
+      "API >= 1.0.0",
+      "Library >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\firdaus-macbook\\.nuget\\packages\\": {},
@@ -14,11 +163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
       "projectName": "HYMAPSOPIR",
-      "projectPath": "C:\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
+      "projectPath": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
       "packagesPath": "C:\\Users\\firdaus-macbook\\.nuget\\packages\\",
-      "outputPath": "C:\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\HYMAPSOPIR\\obj\\",
+      "outputPath": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\HYMAPSOPIR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,7 +187,14 @@
       "frameworks": {
         "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\API\\API.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\API\\API.csproj"
+            },
+            "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
