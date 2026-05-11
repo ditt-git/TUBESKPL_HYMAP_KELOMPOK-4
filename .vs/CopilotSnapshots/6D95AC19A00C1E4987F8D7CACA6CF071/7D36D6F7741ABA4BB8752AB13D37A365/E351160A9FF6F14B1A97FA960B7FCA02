@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using HYMAPSOPIR.Contracts;
+
+namespace HYMAPSOPIR
+{
+
+    public class Pelanggan : EntitasDasar<string>
+    {
+
+
+        public const int SIKLUS_HARI_PENGIRIMAN = 7;
+
+        public string IdPelanggan => Id;
+
+        public string NamaPelanggan { 
+            get; 
+        }
+        public string Alamat { 
+            get; 
+        }
+        public Armada Wilayah { 
+            get; 
+        }
+
+        public DateTime TanggalTerakhirKirim { 
+            get; 
+            private set;
+        }
+
+        public Pelanggan(string id, string nama, string alamat, Armada wilayah, DateTime terakhirKirim)
+        {
+            Id = id; 
+            NamaPelanggan = nama;
+            Alamat = alamat;
+            TanggalTerakhirKirim = terakhirKirim;
+            Wilayah = wilayah;
+        }
+
+    
+        public void UpdateTanggalPengirimanBerhasil(DateTime tanggalKirimBaru)
+        {
+            TanggalTerakhirKirim = tanggalKirimBaru;
+        }
+
+        // Menghitung jadwal berikutnya (Siklus 7 Hari)
+        public DateTime JadwalBerikutnya()
+        {
+            return TanggalTerakhirKirim.AddDays(SIKLUS_HARI_PENGIRIMAN);
+        }
+    }
+}
+
