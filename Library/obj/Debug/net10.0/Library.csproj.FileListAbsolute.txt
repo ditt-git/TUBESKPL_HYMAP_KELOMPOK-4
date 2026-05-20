@@ -1,0 +1,68 @@
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.deps.json
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.dll
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.pdb
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfoInputs.cache
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfo.cs
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.csproj.CoreCompileInputs.cache
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.dll
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\refint\Library.dll
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.pdb
+C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\ref\Library.dll
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.deps.json
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.dll
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.pdb
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfo.cs
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.dll
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\refint\Library.dll
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.pdb
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\ref\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.deps.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfoInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfo.cs
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.csproj.CoreCompileInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.sourcelink.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\refint\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\ref\Library.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.deps.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfoInputs.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfo.cs
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.csproj.CoreCompileInputs.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\refint\Library.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\ref\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.deps.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\bin\Debug\net10.0\Library.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfoInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.AssemblyInfo.cs
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.csproj.CoreCompileInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.sourcelink.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\refint\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\Library.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\Library\obj\Debug\net10.0\ref\Library.dll
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\bin\Debug\net10.0\Library.deps.json
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\bin\Debug\net10.0\Library.dll
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\bin\Debug\net10.0\Library.pdb
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\Library.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\Library.AssemblyInfo.cs
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\Library.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\Library.dll
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\refint\Library.dll
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\Library.pdb
+\\Mac\Home\Desktop\HYMAPSOPIR REVISI 20 MEI\Library\obj\Debug\net10.0\ref\Library.dll
