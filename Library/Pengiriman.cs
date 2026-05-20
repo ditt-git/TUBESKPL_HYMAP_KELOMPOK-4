@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Diagnostics;
 
 namespace HYMAPSOPIR
 {
@@ -14,9 +15,13 @@ namespace HYMAPSOPIR
 
         public Pengiriman(Pelanggan pelanggan, DateTime tanggalHariIni)
         {
+            // Design by Contract: Pre-conditions
+            Debug.Assert(pelanggan != null, "Pelanggan tidak boleh null!");
+            if (pelanggan == null) throw new ArgumentNullException(nameof(pelanggan), "Data pelanggan tidak valid.");
+
             DataPelanggan = pelanggan;
-            StatusKirim = StatusPengiriman.BelumTerkirim;
-            StatusBayar = StatusPembayaran.BelumBayar;
+            StatusKirim = (StatusPengiriman)0;
+            StatusBayar = StatusPembayaran.Bon;
             BuktiFoto = string.Empty;
 
             // Kalkulasi prioritas saat pesanan di-generate hari ini

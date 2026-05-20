@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj": {}
+    "\\\\Mac\\Home\\Desktop\\HYMAPSOPIR REVISI 20 MEI\\Library\\Library.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj": {
+    "\\\\Mac\\Home\\Desktop\\HYMAPSOPIR REVISI 20 MEI\\Library\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\HYMAPSOPIR REVISI 20 MEI\\Library\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj",
+        "projectPath": "\\\\Mac\\Home\\Desktop\\HYMAPSOPIR REVISI 20 MEI\\Library\\Library.csproj",
         "packagesPath": "C:\\Users\\firdaus-macbook\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Documents\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\obj\\",
+        "outputPath": "\\\\Mac\\Home\\Desktop\\HYMAPSOPIR REVISI 20 MEI\\Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,3 +1,7 @@
+using System;
+using System.IO;
+using System.Windows.Forms;
+
 namespace HYMAPSOPIR
 {
     internal static class Program
@@ -8,8 +12,20 @@ namespace HYMAPSOPIR
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            appConfig.Load();
+
+            if (appConfig.IsMaintenanceMode)
+            {
+                MessageBox.Show(
+                    appConfig.MaintenanceMessage,
+                    "HYMAP Sistem Maintenance",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                return; 
+            }
+
             ApplicationConfiguration.Initialize();
             Application.Run(new FormLogin());
         }

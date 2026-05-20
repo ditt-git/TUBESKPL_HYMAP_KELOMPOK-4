@@ -1,4 +1,4 @@
 {
-  "AppName": "HYMAP-SOPIR",
-  "Version": "Alpha"
+  "IsMaintenanceMode": false,
+  "MaintenanceMessage": "aplikasi sedang maintenance untuk optimasi."
 }

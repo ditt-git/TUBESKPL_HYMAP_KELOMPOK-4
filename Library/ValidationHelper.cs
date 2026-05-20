@@ -13,5 +13,10 @@ namespace HYMAPSOPIR
         {
             return !string.IsNullOrEmpty(password);
         }
+
+        public static bool IsPasswordLengthValid(string password)
+        {
+            return password != null && password.Length >= 5;
+        }
     }
 }
