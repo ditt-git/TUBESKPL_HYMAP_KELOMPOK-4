@@ -24,6 +24,15 @@ namespace HYMAPSOPIR
 
         public Sopir(string nama, string username, string password, Armada armada)
         {
+
+
+            Debug.Assert(!string.IsNullOrWhiteSpace(nama), "FATAL: Nama sopir tidak boleh null/kosong!");
+            Debug.Assert(!string.IsNullOrWhiteSpace(username), "FATAL: Username tidak boleh null/kosong!");
+            Debug.Assert(!string.IsNullOrWhiteSpace(password), "FATAL: Password tidak boleh null/kosong!");
+
+            if (string.IsNullOrWhiteSpace(nama)) throw new ArgumentException("Nama tidak boleh kosong.");
+            if (string.IsNullOrWhiteSpace(username)) throw new ArgumentException("Username tidak boleh kosong.");
+
             Id = username;
             Nama = nama;
             Username = username;
@@ -31,16 +40,23 @@ namespace HYMAPSOPIR
             ArmadaTugas = armada;
             DaftarTugasHariIni = new List<Pengiriman>();
 
-            Debug.Assert(!string.IsNullOrWhiteSpace(nama), "Nama tidak boleh kosong!");
-            if (string.IsNullOrWhiteSpace(nama)) throw new ArgumentException("Nama tidak sesuai!.");
+
         }
 
         public void SetTugasBerdasarkanArmada(List<Pelanggan> semuaPelanggan, DateTime hariIni)
         {
+            if (semuaPelanggan == null)
+            {
+                return;
+            }
+
             string[] ruteId = RouteTable.GetRute(this.ArmadaTugas);
 
+            if (ruteId == null) ruteId = new string[0];
+
             var pelangganTarget = semuaPelanggan
-                .Where(p => ruteId.Contains(p.IdPelanggan) &&
+                .Where(p => p != null &&
+                            ruteId.Contains(p.IdPelanggan) &&
                             (p.JadwalBerikutnya() <= hariIni || p.TanggalTerakhirKirim.Date == hariIni.Date))
                 .ToList();
 
@@ -52,8 +68,7 @@ namespace HYMAPSOPIR
 
                 if (tugasSudahAda != null)
                 {
-                    tugasSudahAda.UpdatePrioritas(hariIni);
-                    tugasBaruAtauLama.Add(tugasSudahAda); 
+                    tugasBaruAtauLama.Add(tugasSudahAda);
                 }
                 else
                 {
@@ -64,16 +79,20 @@ namespace HYMAPSOPIR
             DaftarTugasHariIni = tugasBaruAtauLama.OrderByDescending(t => t.Prioritas).ToList();
         }
 
-        
+
 
         public void TampilkanJadwalHariIni()
         {
+
             Console.WriteLine($"\n=== JADWAL PENGIRIMAN HARI INI: {Nama} ===");
             Console.WriteLine($"ARMADA: {ArmadaTugas}");
-            if (DaftarTugasHariIni.Count == 0)
+
+            if (DaftarTugasHariIni == null || !DaftarTugasHariIni.Any())
             {
                 Console.WriteLine("Tidak ada jadwal pengiriman untuk wilayah Anda hari ini.");
+                return;
             }
+
             else
             {
                 for (int i = 0; i < DaftarTugasHariIni.Count; i++)
@@ -90,7 +109,9 @@ namespace HYMAPSOPIR
 
         public Pengiriman AmbilTugasBerdasarkanNomor(int nomor)
         {
-            if (nomor > 0 && nomor <= DaftarTugasHariIni.Count)
+
+
+            if (DaftarTugasHariIni != null && nomor > 0 && nomor <= DaftarTugasHariIni.Count)
             {
                 return DaftarTugasHariIni[nomor - 1];
             }
@@ -99,6 +120,14 @@ namespace HYMAPSOPIR
 
         public void EksekusiPengiriman(Pengiriman tugas, StatusPengiriman statusKirim, StatusPembayaran statusBayar, string foto = "")
         {
+            // DEFENSIVE PROGRAMMING: Parameter Validation
+
+            if (tugas == null || tugas.DataPelanggan == null)
+            {
+                Console.WriteLine("\n[ERROR] Validasi ditolak! Objek tugas atau pelanggan tidak valid.");
+                return;
+            }
+
             if (statusKirim == StatusPengiriman.SudahTerkirim && string.IsNullOrEmpty(foto))
             {
                 Console.WriteLine($"\n[GAGAL] Validasi ditolak! Bukti foto wajib diisi jika galon terkirim.");
@@ -119,26 +148,46 @@ namespace HYMAPSOPIR
 
         public void TampilkanJadwalMendatang(List<Pelanggan> semuaPelanggan, DateTime tanggalHariIni, int rentangHari = 7)
         {
-            Console.WriteLine($"\n=== PROYEKSI JADWAL ({rentangHari} HARI KE DEPAN) ===");
-            string[] ruteId = RouteTable.GetRute(this.ArmadaTugas);
 
-            var pelangganDiurutkan = semuaPelanggan
-                .Where(p => ruteId.Contains(p.IdPelanggan))
-                .OrderBy(p => p.JadwalBerikutnya())
-                .ToList();
 
-            bool adaJadwal = false;
-            foreach (var p in pelangganDiurutkan)
+            // Defensive: Null Check
+            if (semuaPelanggan == null)
             {
-                DateTime jadwal = p.JadwalBerikutnya();
-                if (jadwal > tanggalHariIni && jadwal <= tanggalHariIni.AddDays(rentangHari))
-                {
-                    Console.WriteLine($"- {jadwal.ToString("dd MMM yyyy")} : {p.NamaPelanggan} | {p.Alamat}");
-                    adaJadwal = true;
-                }
+                Console.WriteLine("Data pelanggan tidak tersedia.");
+                return;
             }
 
-            if (!adaJadwal) Console.WriteLine("Tidak ada jadwal pengiriman di wilayah Anda.");
+
+            Console.WriteLine($"\n=== PROYEKSI JADWAL ({rentangHari} HARI KE DEPAN) ===");
+
+            try
+            {
+
+                string[] ruteId = RouteTable.GetRute(this.ArmadaTugas);
+
+                var pelangganDiurutkan = semuaPelanggan
+                    .Where(p => ruteId.Contains(p.IdPelanggan))
+                    .OrderBy(p => p.JadwalBerikutnya())
+                    .ToList();
+
+                bool adaJadwal = false;
+                foreach (var p in pelangganDiurutkan)
+                {
+                    DateTime jadwal = p.JadwalBerikutnya();
+                    if (jadwal > tanggalHariIni && jadwal <= tanggalHariIni.AddDays(rentangHari))
+                    {
+                        Console.WriteLine($"- {jadwal.ToString("dd MMM yyyy")} : {p.NamaPelanggan} | {p.Alamat}");
+                        adaJadwal = true;
+                    }
+                }
+
+                if (!adaJadwal) Console.WriteLine("Tidak ada jadwal pengiriman di wilayah Anda.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"\n[ERROR] Terjadi kesalahan sistem saat memproses jadwal mendatang.");
+                Console.WriteLine($"Pesan Teknis: {ex.Message}");
+            }
             Console.WriteLine("====================================================\n");
         }
     }

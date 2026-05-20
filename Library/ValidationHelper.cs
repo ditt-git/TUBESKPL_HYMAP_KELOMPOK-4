@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace HYMAPSOPIR
 {
@@ -12,6 +12,11 @@ namespace HYMAPSOPIR
         public static bool IsPasswordStrong(string password)
         {
             return !string.IsNullOrEmpty(password);
+        }
+
+        public static bool IsPasswordLengthValid(string password)
+        {
+            return password != null && password.Length >= 5;
         }
     }
 }

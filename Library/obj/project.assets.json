@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR_GUI_update11mei\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR_GUI_update20mei\\HYMAPSOPIR_GUI_update19mei\\HYMAPSOPIR_GUI_update11mei\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR_GUI_update11mei\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj",
+      "projectPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR_GUI_update20mei\\HYMAPSOPIR_GUI_update19mei\\HYMAPSOPIR_GUI_update11mei\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\Library.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR_GUI_update11mei\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\obj\\",
+      "outputPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR_GUI_update20mei\\HYMAPSOPIR_GUI_update19mei\\HYMAPSOPIR_GUI_update11mei\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

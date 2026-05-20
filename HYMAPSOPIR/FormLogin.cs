@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +30,12 @@ namespace HYMAPSOPIR
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
+            // Menggunakan konfigurasi runtime
+            this.Text = ConfigManager.Instance.AppName;
+            LabelJudul.Text = ConfigManager.Instance.AppName;
+
+            this.Text = ConfigManager.Instance.Version;
+            LabelVersi.Text = ConfigManager.Instance.Version;
 
         }
 
@@ -39,6 +45,14 @@ namespace HYMAPSOPIR
             if (ValidationHelper.IsEmpty(textBox2.Text))
             {
                 MessageBox.Show("Password tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox2.Focus();
+                return;
+            }
+
+            // Validasi Panjang Password minimal 5 karakter
+            if (!ValidationHelper.IsPasswordLengthValid(textBox2.Text))
+            {
+                MessageBox.Show("Password tidak boleh kurang dari 5 huruf!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox2.Focus();
                 return;
             }

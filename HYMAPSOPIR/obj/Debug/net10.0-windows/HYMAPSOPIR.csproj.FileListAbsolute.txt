@@ -164,3 +164,108 @@ C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net
 \\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
 \\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
 \\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\ref\HYMAPSOPIR.dll
+\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\config.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.deps.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.runtimeconfig.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\appsettings.Development.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\appsettings.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.staticwebassets.endpoints.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.exe
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\config.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.exe
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.deps.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.runtimeconfig.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Microsoft.OpenApi.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Scalar.AspNetCore.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Library.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.AssemblyReference.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.DetailPengiriman.resources
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.Form1.resources
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.FormLogin.resources
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.GenerateResource.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfoInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfo.cs
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.CoreCompileInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.sourcelink.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.Up2Date
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\refint\HYMAPSOPIR.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\ref\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\appsettings.Development.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\appsettings.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.staticwebassets.endpoints.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\config.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.deps.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.runtimeconfig.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.exe
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.exe
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.deps.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.runtimeconfig.json
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Microsoft.AspNetCore.OpenApi.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Microsoft.OpenApi.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Scalar.AspNetCore.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Library.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Library.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.AssemblyReference.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.DetailPengiriman.resources
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.Form1.resources
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.FormLogin.resources
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.GenerateResource.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.GeneratedMSBuildEditorConfig.editorconfig
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfoInputs.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfo.cs
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.CoreCompileInputs.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.Up2Date
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\refint\HYMAPSOPIR.dll
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
+D:\TUBES KPL\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\ref\HYMAPSOPIR.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\appsettings.Development.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\appsettings.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.staticwebassets.endpoints.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\config.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.deps.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.runtimeconfig.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.exe
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.exe
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.deps.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.runtimeconfig.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\HYMAPSOPIR.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Microsoft.OpenApi.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Scalar.AspNetCore.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\API.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\bin\Debug\net10.0-windows\Library.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.AssemblyReference.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.DetailPengiriman.resources
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.Form1.resources
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.FormLogin.resources
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.GenerateResource.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfoInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.AssemblyInfo.cs
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.CoreCompileInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.sourcelink.json
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.csproj.Up2Date
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\refint\HYMAPSOPIR.dll
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\HYMAPSOPIR.genruntimeconfig.cache
+C:\Users\asus\Downloads\HYMAPSOPIR_GUI_update20mei\HYMAPSOPIR_GUI_update19mei\HYMAPSOPIR_GUI_update11mei\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\HYMAPSOPIR\obj\Debug\net10.0-windows\ref\HYMAPSOPIR.dll

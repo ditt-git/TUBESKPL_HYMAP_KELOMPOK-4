@@ -8,20 +8,17 @@ namespace HYMAPSOPIR
 
     public static class RouteTable
     {
-        // Index 0: Denpasar, 1: Karangasem, 2: Gianyar, 3: Tabanan
-        private static readonly string[][] TabelRute = new string[][]
-    {
-            new string[] { "P001", "P004", "P007" }, // Denpasar
-            new string[] { "P002", "P005" },         // Karangasem
-            new string[] { "P003", "P006" },         // Gianyar
-            new string[] { "P008", "P009" }          // Tabanan
-    };
+        public static string[] GetRute(Armada armada)
+        {
 
-    public static string[] GetRute(Armada armada)
-    {
-        // menggunakan casting (int) armada sebagai index untuk mengambil datanya
+            string[][] tabelRute = new string[4][];
 
-        return TabelRute[(int)armada];
+            tabelRute[(int)Armada.Denpasar] = new string[] { "P001", "P004", "P007" };
+            tabelRute[(int)Armada.Karangasem] = new string[] { "P002", "P005" };
+            tabelRute[(int)Armada.Gianyar] = new string[] { "P003", "P006" };
+            tabelRute[(int)Armada.Tabanan] = new string[] { "P008", "P009" };
+
+            return tabelRute[(int)armada];
+        }
     }
-}
 }
