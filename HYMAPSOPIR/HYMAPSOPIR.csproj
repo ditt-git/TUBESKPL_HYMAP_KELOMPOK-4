@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <PackageReference Include="MySql.Data" Version="9.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+>>>>>>> IGedePutuArthaJayaW
     <ProjectReference Include="..\API\API.csproj" />
     <ProjectReference Include="..\Library\Library.csproj" />
   </ItemGroup>
