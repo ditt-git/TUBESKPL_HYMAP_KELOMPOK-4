@@ -11,18 +11,18 @@ namespace HYMAPSOPIR
         private List<Pelanggan> databasePelanggan;
         private DateTime currentDate;
 
-        public Dashboard(Sopir sopirLogin)
+        public Dashboard()
         {
             InitializeComponent();
 
-            sopirAktif = sopirLogin;
+            sopirAktif = SopirSession.Instance.SopirAktif;
 
             // Ambil tanggal dari DateTimePicker
             currentDate = dtpTanggal.Value;
 
             // Set tugas sopir berdasarkan tanggal tersebut
-            sopirAktif.SetTugasBerdasarkanArmada(DatabaseSimulasi.PelangganDB, currentDate);
-
+            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
+            sopirAktif.SetTugasBerdasarkanArmada(databasePelanggan, currentDate);
             // Tampilkan nama dan armada
             lblNamaSopir.Text = sopirAktif.Nama;
             lblArmada.Text = sopirAktif.ArmadaTugas.ToString();
@@ -81,7 +81,8 @@ namespace HYMAPSOPIR
         {
             currentDate = dtpTanggal.Value;
             // Refresh tugas berdasarkan tanggal baru
-            sopirAktif.SetTugasBerdasarkanArmada(DatabaseSimulasi.PelangganDB, currentDate);
+            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
+            sopirAktif.SetTugasBerdasarkanArmada(databasePelanggan, currentDate);
             BindDataPengiriman();
         }
 
