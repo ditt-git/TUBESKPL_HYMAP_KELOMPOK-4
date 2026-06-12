@@ -123,7 +123,6 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "Belum terkirim";
             radioButton1.UseVisualStyleBackColor = true;
-            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -136,6 +135,7 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "Terkirim";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // label4
             // 
@@ -154,7 +154,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 10;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label5
             // 
@@ -193,7 +192,6 @@
             radioButton3.TabStop = true;
             radioButton3.Text = "radioButton3";
             radioButton3.UseVisualStyleBackColor = true;
-            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // button1
             // 

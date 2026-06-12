@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D17B6F7B-BB6B-237C-EE69-144236E25962}|HYMAPSOPIR\\HYMAPSOPIR.csproj|\\\\mac\\home\\documents\\hymap kpl\\9 juni\\hymapsopir revisi 20 mei\\hymapsopir revisi 20 mei\\hymapsopir\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17B6F7B-BB6B-237C-EE69-144236E25962}|HYMAPSOPIR\\HYMAPSOPIR.csproj|\\\\mac\\home\\documents\\hymap kpl\\9 juni\\hymapsopir revisi 20 mei\\hymapsopir revisi 20 mei\\hymapsopir\\notifsopir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17B6F7B-BB6B-237C-EE69-144236E25962}|HYMAPSOPIR\\HYMAPSOPIR.csproj|\\\\mac\\home\\documents\\hymap kpl\\9 juni\\hymapsopir revisi 20 mei\\hymapsopir revisi 20 mei\\hymapsopir\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17B6F7B-BB6B-237C-EE69-144236E25962}|HYMAPSOPIR\\HYMAPSOPIR.csproj|\\\\mac\\home\\documents\\hymap kpl\\9 juni\\hymapsopir revisi 20 mei\\hymapsopir revisi 20 mei\\hymapsopir\\detailpengiriman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\NotificationService.cs",
+              "RelativeDocumentMoniker": "HYMAPSOPIR\\NotificationService.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\NotificationService.cs",
+              "RelativeToolTip": "HYMAPSOPIR\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T13:58:35.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NotifSopir.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\NotifSopir.cs",
+              "RelativeDocumentMoniker": "HYMAPSOPIR\\NotifSopir.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\NotifSopir.cs",
+              "RelativeToolTip": "HYMAPSOPIR\\NotifSopir.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T13:55:21.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\Dashboard.cs",
+              "RelativeDocumentMoniker": "HYMAPSOPIR\\Dashboard.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\Dashboard.cs*",
+              "RelativeToolTip": "HYMAPSOPIR\\Dashboard.cs*",
+              "ViewState": "AgIAACAAAADQNjMzM/MlwCoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T13:30:53.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetailPengiriman.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\DetailPengiriman.cs",
+              "RelativeDocumentMoniker": "HYMAPSOPIR\\DetailPengiriman.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\HYMAP KPL\\9 Juni\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR REVISI 20 MEI\\HYMAPSOPIR\\DetailPengiriman.cs",
+              "RelativeToolTip": "HYMAPSOPIR\\DetailPengiriman.cs",
+              "ViewState": "AgIAACcAAAAANjMzMzMHwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T13:28:42.83Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

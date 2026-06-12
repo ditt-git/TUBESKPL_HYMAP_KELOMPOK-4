@@ -34,7 +34,6 @@
             button1 = new Button();
             label1 = new Label();
             label2 = new Label();
-            LabelVersi = new Label();
             SuspendLayout();
             // 
             // LabelJudul
@@ -96,22 +95,12 @@
             label2.TabIndex = 5;
             label2.Text = "Password";
             // 
-            // LabelVersi
-            // 
-            LabelVersi.AutoSize = true;
-            LabelVersi.Location = new Point(171, 108);
-            LabelVersi.Name = "LabelVersi";
-            LabelVersi.Size = new Size(31, 15);
-            LabelVersi.TabIndex = 6;
-            LabelVersi.Text = "versi";
-            // 
             // FormLogin
             // 
             AcceptButton = button1;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(372, 450);
-            Controls.Add(LabelVersi);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
@@ -134,6 +123,5 @@
         private Button button1;
         private Label label1;
         private Label label2;
-        private Label LabelVersi;
     }
 }

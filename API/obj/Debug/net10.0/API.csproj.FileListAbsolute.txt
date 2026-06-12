@@ -1,74 +1,109 @@
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\appsettings.Development.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\appsettings.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.staticwebassets.endpoints.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.exe
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.deps.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.runtimeconfig.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.pdb
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Microsoft.OpenApi.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Scalar.AspNetCore.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.csproj.AssemblyReference.cache
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.GeneratedMSBuildEditorConfig.editorconfig
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.AssemblyInfoInputs.cache
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.AssemblyInfo.cs
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.csproj.CoreCompileInputs.cache
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cs
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cache
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rjimswa.dswa.cache.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\scopedcss\bundle\API.styles.css
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.build.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.build.json.cache
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.development.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\swae.build.ex.cache
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.csproj.Up2Date
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\refint\API.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.pdb
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.genruntimeconfig.cache
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\ref\API.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Library.dll
-C:\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Library.pdb
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\appsettings.Development.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\appsettings.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.staticwebassets.endpoints.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.exe
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.deps.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.runtimeconfig.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.dll
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\API.pdb
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Microsoft.OpenApi.dll
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Scalar.AspNetCore.dll
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Library.dll
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\bin\Debug\net10.0\Library.pdb
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.csproj.AssemblyReference.cache
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rpswa.dswa.cache.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.GeneratedMSBuildEditorConfig.editorconfig
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.AssemblyInfoInputs.cache
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.AssemblyInfo.cs
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.csproj.CoreCompileInputs.cache
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cs
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cache
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rjimswa.dswa.cache.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\scopedcss\bundle\API.styles.css
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.build.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.build.json.cache
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.development.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\swae.build.ex.cache
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.csproj.Up2Date
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.dll
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\refint\API.dll
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.pdb
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\API.genruntimeconfig.cache
-\\Mac\Home\Documents\HYMAPSOPIR_GUI_update10mei\HYMAPSOPIR_GUI\HYMAPSOPIR\API\obj\Debug\net10.0\ref\API.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\appsettings.Development.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\appsettings.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\API.staticwebassets.endpoints.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\API.exe
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\API.deps.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\API.runtimeconfig.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\API.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\API.pdb
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\BouncyCastle.Cryptography.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\Google.Protobuf.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\K4os.Compression.LZ4.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\K4os.Compression.LZ4.Streams.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\K4os.Hash.xxHash.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\MySql.Data.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\Scalar.AspNetCore.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\System.Security.Permissions.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\System.Windows.Extensions.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\ZstdSharp.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\runtimes\win-x64\native\comerr64.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\runtimes\win-x64\native\gssapi64.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\runtimes\win-x64\native\k5sprt64.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\runtimes\win-x64\native\krb5_64.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\runtimes\win-x64\native\krbcc64.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\Library.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\bin\Debug\net10.0\Library.pdb
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\rpswa.dswa.cache.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.AssemblyInfo.cs
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cs
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cache
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\scopedcss\bundle\API.styles.css
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\staticwebassets.build.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\staticwebassets.build.json.cache
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\staticwebassets.development.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\swae.build.ex.cache
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.csproj.Up2Date
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\refint\API.dll
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.pdb
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\API.genruntimeconfig.cache
+\\Mac\Home\Documents\HYMAP KPL\9 Juni\HYMAPSOPIR REVISI 20 MEI\HYMAPSOPIR REVISI 20 MEI\API\obj\Debug\net10.0\ref\API.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\appsettings.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\API.staticwebassets.endpoints.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\API.exe
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\API.deps.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\API.runtimeconfig.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\API.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\API.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\BouncyCastle.Cryptography.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\Google.Protobuf.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\K4os.Compression.LZ4.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\K4os.Hash.xxHash.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\MySql.Data.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\Scalar.AspNetCore.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\System.Security.Permissions.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\System.Windows.Extensions.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\ZstdSharp.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\Library.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\bin\Debug\net10.0\Library.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.csproj.AssemblyReference.cache
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.AssemblyInfoInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.AssemblyInfo.cs
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.csproj.CoreCompileInputs.cache
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.sourcelink.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\scopedcss\bundle\API.styles.css
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.csproj.Up2Date
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\refint\API.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.pdb
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\API.genruntimeconfig.cache
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\ref\API.dll
+C:\Users\asus\Downloads\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\HYMAPSOPIR REVISI 9 JUNI\API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

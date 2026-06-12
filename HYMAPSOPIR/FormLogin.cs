@@ -30,12 +30,6 @@ namespace HYMAPSOPIR
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            // Menggunakan konfigurasi runtime
-            this.Text = ConfigManager.Instance.AppName;
-            LabelJudul.Text = ConfigManager.Instance.AppName;
-
-            this.Text = ConfigManager.Instance.Version;
-            LabelVersi.Text = ConfigManager.Instance.Version;
 
         }
 
@@ -64,8 +58,8 @@ namespace HYMAPSOPIR
             string inputUsername = textBox1.Text;
             string inputPassword = textBox2.Text;
 
-            Sopir akunDitemukan = DataHelper.CariBerdasarkanId(DatabaseSimulasi.SopirDB, inputUsername);
-
+            List<Sopir> dataSopirDb = Library.Database.SopirDAO.GetAllSopir();
+            Sopir akunDitemukan = DataHelper.CariBerdasarkanId(dataSopirDb, inputUsername);
 
 
 
@@ -84,8 +78,10 @@ namespace HYMAPSOPIR
             {
                 MessageBox.Show($"Selamat datang, {akunValid.Nama}!", "Login Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                SopirSession.Instance.SopirAktif = akunValid;
+
                 // Membuka Form1 dengan data sopir yang valid
-                Form1 formUtama = new Form1(akunValid);
+                Dashboard formUtama = new Dashboard();
 
                 this.Hide();
 
@@ -94,6 +90,7 @@ namespace HYMAPSOPIR
                 {
                     this.Show();
                     textBox2.Clear();
+                    SopirSession.Instance.Logout();
                 };
 
                 formUtama.Show();

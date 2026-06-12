@@ -20,8 +20,8 @@ namespace HYMAPSOPIR
             if (pelanggan == null) throw new ArgumentNullException(nameof(pelanggan), "Data pelanggan tidak valid.");
 
             DataPelanggan = pelanggan;
-            StatusKirim = StatusPengiriman.BelumTerkirim;
-            StatusBayar = StatusPembayaran.BelumBayar;
+            StatusKirim = (StatusPengiriman)0;
+            StatusBayar = StatusPembayaran.Bon;
             BuktiFoto = string.Empty;
 
             // Kalkulasi prioritas saat pesanan di-generate hari ini

@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "6utKsIYRiMQ=",
+  "dgSpecHash": "fDMgzE4gM1g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR_GUI_update20mei\\HYMAPSOPIR_GUI_update19mei\\HYMAPSOPIR_GUI_update11mei\\HYMAPSOPIR_GUI_update10mei\\HYMAPSOPIR_GUI\\HYMAPSOPIR\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
+  "projectFilePath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR\\HYMAPSOPIR.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\asus\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.8\\k4os.compression.lz4.streams.1.3.8.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
-    "C:\\Users\\asus\\.nuget\\packages\\scalar.aspnetcore\\2.14.11\\scalar.aspnetcore.2.14.11.nupkg.sha512"
+    "C:\\Users\\asus\\.nuget\\packages\\mysql.data\\9.7.0\\mysql.data.9.7.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\scalar.aspnetcore\\2.14.11\\scalar.aspnetcore.2.14.11.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\zstdsharp.port\\0.8.6\\zstdsharp.port.0.8.6.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -12,11 +13,16 @@ namespace HYMAPSOPIR
     {
         private Pengiriman tugasPengiriman;
 
+        // Mendeklarasikan event Observer
+        public event EventHandler DataPengirimanDiubah;
+
         public DetailPengiriman(Pengiriman tugas)
         {
             InitializeComponent();
             tugasPengiriman = tugas;
 
+            radioButton1.Text = "Belum Terkirim";
+            radioButton2.Text = "Sudah Terkirim";
             radioButton3.Text = "Gagal";
 
             labelNamaPelanggan.Text = tugas.DataPelanggan.NamaPelanggan;
@@ -25,89 +31,78 @@ namespace HYMAPSOPIR
             labelPrioritas.Text = tugas.Prioritas.ToString();
             labelBuktiKirim.Text = string.IsNullOrEmpty(tugas.BuktiFoto) ? "-" : tugas.BuktiFoto;
 
-            if (tugas.StatusKirim == StatusPengiriman.BelumTerkirim) radioButton1.Checked = true;
-            else if (tugas.StatusKirim == StatusPengiriman.SudahTerkirim) radioButton2.Checked = true;
+            if (tugas.StatusKirim == (StatusPengiriman)0) radioButton1.Checked = true;
+            else if (tugas.StatusKirim == (StatusPengiriman)1) radioButton2.Checked = true;
             else radioButton3.Checked = true;
 
             comboBox1.Items.Clear();
-            comboBox1.Items.AddRange(new string[] { "BelumBayar", "Cash", "Transfer", "Bon" });
+            comboBox1.Items.AddRange(new string[] { "Bon", "Cash", "Transfer" });
             comboBox1.SelectedItem = tugas.StatusBayar.ToString();
-
-
-
         }
 
         private void DetailPengiriman_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelNamaPelanggan_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ButtonKembali_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-
         }
 
         private void buttonLanjut_Click(object sender, EventArgs e)
         {
-            // Simpan perubahan Status Pengiriman
-            if (radioButton1.Checked) tugasPengiriman.StatusKirim = StatusPengiriman.BelumTerkirim;
-            else if (radioButton2.Checked) tugasPengiriman.StatusKirim = StatusPengiriman.SudahTerkirim;
-            else if (radioButton3.Checked) tugasPengiriman.StatusKirim = StatusPengiriman.Gagal;
-
-            // Simpan perubahan Status Pembayaran
-            if (comboBox1.SelectedItem != null)
+            try
             {
-                string bayar = comboBox1.SelectedItem.ToString();
-                if (bayar == "BelumBayar") tugasPengiriman.StatusBayar = StatusPembayaran.BelumBayar;
-                else if (bayar == "Cash") tugasPengiriman.StatusBayar = StatusPembayaran.Cash;
-                else if (bayar == "Transfer") tugasPengiriman.StatusBayar = StatusPembayaran.Transfer;
-                else if (bayar == "Bon") tugasPengiriman.StatusBayar = StatusPembayaran.Bon;
-            }
+                StatusPengiriman statusKirimBaru;
+                if (radioButton1.Checked) statusKirimBaru = (StatusPengiriman)0;
+                else if (radioButton2.Checked) statusKirimBaru = (StatusPengiriman)1;
+                else statusKirimBaru = (StatusPengiriman)2;
 
-            // Jika barang terkirim, update otomatis tanggal pengiriman pelanggan
-            if (tugasPengiriman.StatusKirim == StatusPengiriman.SudahTerkirim)
+                StatusPembayaran statusBayarBaru = StatusPembayaran.Bon;
+                if (comboBox1.SelectedItem != null)
+                {
+                    string bayar = comboBox1.SelectedItem.ToString();
+                    if (bayar == "Cash") statusBayarBaru = StatusPembayaran.Cash;
+                    else if (bayar == "Transfer") statusBayarBaru = StatusPembayaran.Transfer;
+                    else statusBayarBaru = StatusPembayaran.Bon;
+                }
+
+                // Menggunakan Command Pattern
+                Library.Commands.ICommand updateCommand = new Library.Commands.UpdatePengirimanCommand(
+                    tugasPengiriman, 
+                    statusKirimBaru, 
+                    statusBayarBaru
+                );
+                
+                updateCommand.Execute();
+
+                MessageBox.Show("Data berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Memicu event untuk memberi tahu Dashboard bahwa data sudah diubah
+                DataPengirimanDiubah?.Invoke(this, EventArgs.Empty);
+
+                this.Close();
+            }
+            catch (InvalidOperationException ex)
             {
-                tugasPengiriman.DataPelanggan.UpdateTanggalPengirimanBerhasil(DateTime.Now);
+                MessageBox.Show(ex.Message, "Peringatan Kontrak", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-            MessageBox.Show("Data berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Tutup form, kembali ke Form1
-            this.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi kesalahan sistem: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void label_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e) { }
+        private void labelNamaPelanggan_Click(object sender, EventArgs e) { }
+        private void ButtonKembali_Click(object sender, EventArgs e) { }
+        private void label_Click(object sender, EventArgs e) { }
+        private void DetailPengiriman_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Menghapus Application.Exit() agar form utama tidak tertutup
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
