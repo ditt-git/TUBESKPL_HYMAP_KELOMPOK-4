@@ -6,8 +6,6 @@ namespace HYMAPSOPIR
 {
     public static class DataHelper
     {
-       
-     
         public static T CariBerdasarkanId<T, TId>(List<T> sumberData, TId idYangDicari) where T : EntitasDasar<TId>
         {
             if (sumberData == null) return default;

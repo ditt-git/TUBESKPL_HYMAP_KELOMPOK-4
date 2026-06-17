@@ -5,24 +5,28 @@ using static System.Windows.Forms.DataFormats;
 
 namespace HYMAPSOPIR
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard : Form, IObserver
     {
         private Sopir sopirAktif;
         private List<Pelanggan> databasePelanggan;
         private DateTime currentDate;
+        private JadwalService serviceJadwal;
+        private AudioTerkirim _audioObserver = new AudioTerkirim();
 
-        public Dashboard()
+        public Dashboard(Sopir sopir)
         {
             InitializeComponent();
 
-            sopirAktif = SopirSession.Instance.SopirAktif;
+            this.sopirAktif = sopir;
 
-            // Ambil tanggal dari DateTimePicker
+            this.serviceJadwal = new JadwalService();
+
+
             currentDate = dtpTanggal.Value;
 
-            // Set tugas sopir berdasarkan tanggal tersebut
-            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
-            sopirAktif.SetTugasBerdasarkanArmada(databasePelanggan, currentDate);
+            this.serviceJadwal.CekDanGenerateJadwalHariIni(this.sopirAktif, currentDate);
+
+
             // Tampilkan nama dan armada
             lblNamaSopir.Text = sopirAktif.Nama;
             lblArmada.Text = sopirAktif.ArmadaTugas.ToString();
@@ -32,14 +36,22 @@ namespace HYMAPSOPIR
 
         }
 
-
         private void BindDataPengiriman()
         {
+            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
+
+            this.serviceJadwal.SetTugasBerdasarkanArmada(this.sopirAktif, databasePelanggan, currentDate);
+
             var listTugas = sopirAktif.DaftarTugasHariIni;
             var displayList = new List<object>();
 
+
             foreach (var tugas in listTugas)
             {
+                // Attach observer pattern 
+                tugas.Attach(this);
+                tugas.Attach(_audioObserver);
+
                 displayList.Add(new
                 {
                     NamaPelanggan = tugas.DataPelanggan.NamaPelanggan,
@@ -55,6 +67,12 @@ namespace HYMAPSOPIR
             dgvPengiriman.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
 
+        // Notifikasi observer pattern untuk menerima notifikasi perubahan status pengiriman
+        public void Update(string notifikasiTerkirim)
+        {
+            MessageBox.Show(notifikasiTerkirim, "Notifikasi Sistem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
 
 
         private void dgvPengiriman_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -66,23 +84,24 @@ namespace HYMAPSOPIR
 
                 DetailPengiriman formDetail = new DetailPengiriman(tugasTerpilih);
 
-                // Tampilkan form menggunakan ShowDialog
+                formDetail.DataPengirimanDiubah += FormDetail_DataPengirimanDiubah;
                 formDetail.ShowDialog();
-
-                //refresh tble
-                BindDataPengiriman();
             }
 
         }
 
+        private void FormDetail_DataPengirimanDiubah(object sender, EventArgs e)
+        {
+            BindDataPengiriman();
+        }
 
         // Event ketika tanggal berubah
         private void dtpTanggal_ValueChanged_1(object sender, EventArgs e)
         {
             currentDate = dtpTanggal.Value;
-            // Refresh tugas berdasarkan tanggal baru
-            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
-            sopirAktif.SetTugasBerdasarkanArmada(databasePelanggan, currentDate);
+
+            this.serviceJadwal.CekDanGenerateJadwalHariIni(this.sopirAktif, currentDate);
+
             BindDataPengiriman();
         }
 
@@ -97,9 +116,8 @@ namespace HYMAPSOPIR
 
             if (result == DialogResult.Yes)
             {
-                FormLogin halamanBaru = new FormLogin();
-                halamanBaru.Show();
-                this.Hide();
+
+                this.Close();
             }
 
 

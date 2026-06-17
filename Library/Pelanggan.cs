@@ -28,8 +28,8 @@ namespace HYMAPSOPIR
             get; 
             private set;
         }
-
-        public Pelanggan(string id, string nama, string alamat, Armada wilayah, DateTime terakhirKirim)
+        public int GalonDipinjam { get; private set; }
+        public Pelanggan(string id, string nama, string alamat, Armada wilayah, DateTime terakhirKirim, int galonDipinjam)
         {
             // Design by Contract: Pre-conditions
             Debug.Assert(!string.IsNullOrWhiteSpace(id), "Id tidak boleh kosong!");
@@ -45,6 +45,7 @@ namespace HYMAPSOPIR
             Alamat = alamat;
             TanggalTerakhirKirim = terakhirKirim;
             Wilayah = wilayah;
+            GalonDipinjam = galonDipinjam;
         }
 
     

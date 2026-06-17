@@ -1,4 +1,4 @@
-﻿using Library.Database;
+using Library.Database;
 using HYMAPSOPIR;
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -12,19 +12,24 @@ namespace HYMAP.API.Controllers
     [Route("api/[controller]")]
     public class SopirController : ControllerBase
     {
+        private readonly JadwalService _jadwalService;
+
+        public SopirController()
+        {
+            _jadwalService = new JadwalService();
+        }
+
         // GET: api/Sopir/{username}/tugas?tanggal=2026-06-09
         [HttpGet("{username}/tugas")]
         public IActionResult GetTugas(string username, [FromQuery] DateTime tanggal)
         {
-            // Ambil seluruh data sopir dari database MySQL
             List<Sopir> dataSopirDb = SopirDAO.GetAllSopir();
             var sopir = dataSopirDb.FirstOrDefault(s => s.Username == username);
             if (sopir == null) return NotFound("Sopir tidak ditemukan.");
 
-            // Ambil seluruh data pelanggan dari database MySQL
             List<Pelanggan> dataPelangganDb = PelangganDAO.GetAllPelanggan();
 
-            sopir.SetTugasBerdasarkanArmada(dataPelangganDb, tanggal);
+            _jadwalService.SetTugasBerdasarkanArmada(sopir, dataPelangganDb, tanggal);
 
             return Ok(sopir.DaftarTugasHariIni);
         }
@@ -41,8 +46,7 @@ namespace HYMAP.API.Controllers
 
             if (sopir == null || pelanggan == null) return BadRequest("Data tidak valid.");
 
-            // Buat objek pengiriman baru
-            var tugasBaru = new Pengiriman(pelanggan, post.TanggalTugas);
+            var tugasBaru = new Pengiriman(pelanggan, post.TanggalTugas, sopir.IdUserDb);
 
             PengirimanDAO.SimpanJadwalPengiriman(tugasBaru);
 
@@ -58,14 +62,20 @@ namespace HYMAP.API.Controllers
             if (sopir == null) return NotFound();
 
             List<Pelanggan> dataPelangganDb = PelangganDAO.GetAllPelanggan();
-            sopir.SetTugasBerdasarkanArmada(dataPelangganDb, DateTime.Now);
+
+            _jadwalService.SetTugasBerdasarkanArmada(sopir, dataPelangganDb, DateTime.Now);
 
             var tugas = sopir.DaftarTugasHariIni.FirstOrDefault(t => t.DataPelanggan.IdPelanggan == idPelanggan);
             if (tugas == null) return NotFound("Tugas pengiriman tidak ditemukan di daftar sopir.");
 
-            sopir.EksekusiPengiriman(tugas, put.StatusKirim, put.StatusBayar, put.BuktiFoto);
+            Library.Commands.ICommand updateCommand = new Library.Commands.UpdatePengirimanCommand(
+                tugas,
+                put.StatusKirim,
+                put.StatusBayar,
+                0
+            );
+            updateCommand.Execute();
 
-            PengirimanDAO.SimpanJadwalPengiriman(tugas);
 
             return Ok(new { Pesan = "Update Berhasil", Data = tugas });
         }
@@ -79,7 +89,8 @@ namespace HYMAP.API.Controllers
             if (sopir == null) return NotFound();
 
             List<Pelanggan> dataPelangganDb = PelangganDAO.GetAllPelanggan();
-            sopir.SetTugasBerdasarkanArmada(dataPelangganDb, DateTime.Now);
+
+            _jadwalService.SetTugasBerdasarkanArmada(sopir, dataPelangganDb, DateTime.Now);
 
             var tugas = sopir.DaftarTugasHariIni.FirstOrDefault(t => t.DataPelanggan.IdPelanggan == idPelanggan);
             if (tugas == null) return NotFound();

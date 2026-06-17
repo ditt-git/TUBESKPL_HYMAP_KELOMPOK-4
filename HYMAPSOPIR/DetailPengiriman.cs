@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +13,9 @@ namespace HYMAPSOPIR
     {
         private Pengiriman tugasPengiriman;
 
+        // Mendeklarasikan event Observer
+        public event EventHandler DataPengirimanDiubah;
+
         public DetailPengiriman(Pengiriman tugas)
         {
             InitializeComponent();
@@ -26,7 +29,8 @@ namespace HYMAPSOPIR
             labelAlamatPelanggan.Text = tugas.DataPelanggan.Alamat;
             labelArmada.Text = tugas.DataPelanggan.Wilayah.ToString();
             labelPrioritas.Text = tugas.Prioritas.ToString();
-            labelBuktiKirim.Text = string.IsNullOrEmpty(tugas.BuktiFoto) ? "-" : tugas.BuktiFoto;
+
+            jumlahpinjamgalon.Text = tugas.DataPelanggan.GalonDipinjam.ToString() + " Galon";
 
             if (tugas.StatusKirim == (StatusPengiriman)0) radioButton1.Checked = true;
             else if (tugas.StatusKirim == (StatusPengiriman)1) radioButton2.Checked = true;
@@ -64,23 +68,23 @@ namespace HYMAPSOPIR
                     else statusBayarBaru = StatusPembayaran.Bon;
                 }
 
-                //DESIGN BY CONTRACT
-                if (statusKirimBaru == (StatusPengiriman)0 || statusKirimBaru == (StatusPengiriman)2)
-                {
-                    //Memastikan status bayar harus Bon
-                    Debug.Assert(statusBayarBaru == StatusPembayaran.Bon,
-                        "KONTRAK: Belum terkirim atau gagal tidak dapat pilih pembayaran selain bon!");
-                }
+                int galonKembaliInput = (int)numGalonKembali.Value;
 
-                tugasPengiriman.StatusKirim = statusKirimBaru;
-                tugasPengiriman.StatusBayar = statusBayarBaru;
+                // Menggunakan Command Pattern
+                Library.Commands.ICommand updateCommand = new Library.Commands.UpdatePengirimanCommand(
+                    tugasPengiriman,
+                    statusKirimBaru,
+                    statusBayarBaru,
+                    galonKembaliInput
+                );
 
-                if (tugasPengiriman.StatusKirim == StatusPengiriman.SudahTerkirim)
-                {
-                    tugasPengiriman.DataPelanggan.UpdateTanggalPengirimanBerhasil(DateTime.Now);
-                }
+                updateCommand.Execute();
+
 
                 MessageBox.Show("Data berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Memicu event untuk memberi tahu Dashboard bahwa data sudah diubah
+                DataPengirimanDiubah?.Invoke(this, EventArgs.Empty);
 
                 this.Close();
             }
@@ -100,7 +104,26 @@ namespace HYMAPSOPIR
         private void label_Click(object sender, EventArgs e) { }
         private void DetailPengiriman_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
