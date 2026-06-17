@@ -1,38 +1,17 @@
 ﻿using System;
-using System.Data;
 using MySql.Data.MySqlClient;
-using HYMAPSOPIR;
 
 namespace Library.Database
 {
-    public class Koneksi 
+    public class Koneksi
     {
-        // Variabel private untuk menyimpan satu-satunya instance
         private static Koneksi _instance;
+        private readonly string _connectionString = "Server=localhost;Database=hymap;Uid=root;Pwd=;";
 
-        private string connectionString = "Server=localhost;Database=hymap;Uid=root;Pwd=;";
+        private Koneksi() { }
 
-        // Private Constructor agar tidak bisa di-new() sembarangan
-        private Koneksi()
-        {
-        }
-
-        // Global Point of Access/Inti dari Singleton
-        public static Koneksi Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new Koneksi();
-                }
-                return _instance;
-            }
-        }
-
-        public MySqlConnection GetConnection()
-        {
-            return new MySqlConnection(connectionString);
-        }
+        // KISS
+        public static Koneksi Instance => _instance ??= new Koneksi();
+        public MySqlConnection GetConnection() => new MySqlConnection(_connectionString);
     }
 }

@@ -4,19 +4,9 @@ namespace HYMAPSOPIR
 {
     public static class ValidationHelper
     {
-        public static bool IsEmpty(string input)
-        {
-            return string.IsNullOrWhiteSpace(input);
-        }
-
-        public static bool IsPasswordStrong(string password)
-        {
-            return !string.IsNullOrEmpty(password);
-        }
-
-        public static bool IsPasswordLengthValid(string password)
-        {
-            return password != null && password.Length >= 5;
-        }
+        // KISS
+        public static bool IsEmpty(string input) => string.IsNullOrWhiteSpace(input);
+        public static bool IsPasswordNotEmpty(string password) => !string.IsNullOrEmpty(password);
+        public static bool IsPasswordLengthValid(string password) => password != null && password.Length >= 5;
     }
 }

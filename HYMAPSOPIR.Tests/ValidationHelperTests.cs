@@ -40,7 +40,7 @@ namespace HYMAPSOPIR.Tests
         public void IsPasswordLengthValid_Null_MengembalikanFalse()
         {
             // Arrange & Act
-            bool hasil = ValidationHelper.IsPasswordLengthValid(null);
+            bool hasil = ValidationHelper.IsPasswordLengthValid(null!);
 
             // Assert
             Assert.IsFalse(hasil);
