@@ -5,24 +5,43 @@ using System.Diagnostics;
 
 namespace HYMAPSOPIR
 {
-    public class Pengiriman
+    public class Pengiriman : ISubject
     {
-        public Pelanggan DataPelanggan { get; }
-        public StatusPengiriman StatusKirim { get; set; }
-        public StatusPembayaran StatusBayar { get; set; }
-        public PrioritasPengiriman Prioritas { get; private set; }
-        public string BuktiFoto { get; set; }
+        private List<IObserver> _observers = new List<IObserver>();
+        private StatusPengiriman _statusKirim;
 
-        public Pengiriman(Pelanggan pelanggan, DateTime tanggalHariIni)
+        public int IdUserSopir { get; set; }
+        public Pelanggan DataPelanggan { get; }
+        public StatusPengiriman StatusKirim
+        {
+            get { return _statusKirim; }
+            set
+            {
+                _statusKirim = value;
+                if (_statusKirim == (StatusPengiriman)1)
+                {
+                    Notify();
+                }
+            }
+        }
+        public StatusPembayaran StatusBayar { get; set; }
+        public PrioritasPengiriman Prioritas { get; set; }
+
+        public int GalonKembali { get; set; }
+        public DateTime TanggalTugas { get; set; }
+        public Pengiriman(Pelanggan pelanggan, DateTime tanggalHariIni, int idUserSopir)
         {
             // Design by Contract: Pre-conditions
             Debug.Assert(pelanggan != null, "Pelanggan tidak boleh null!");
             if (pelanggan == null) throw new ArgumentNullException(nameof(pelanggan), "Data pelanggan tidak valid.");
 
+            IdUserSopir = idUserSopir;
             DataPelanggan = pelanggan;
             StatusKirim = (StatusPengiriman)0;
             StatusBayar = StatusPembayaran.Bon;
-            BuktiFoto = string.Empty;
+
+            GalonKembali = 0;
+            TanggalTugas = tanggalHariIni;
 
             // Kalkulasi prioritas saat pesanan di-generate hari ini
             UpdatePrioritas(tanggalHariIni);
@@ -32,41 +51,28 @@ namespace HYMAPSOPIR
         {
             Prioritas = PrioritasChecker.HitungPrioritas(DataPelanggan.JadwalBerikutnya(), tanggalHariIni);
         }
-    }
-}
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Diagnostics;
 
-namespace HYMAPSOPIR
-{
-    public class Pengiriman
-    {
-        public Pelanggan DataPelanggan { get; }
-        public StatusPengiriman StatusKirim { get; set; }
-        public StatusPembayaran StatusBayar { get; set; }
-        public PrioritasPengiriman Prioritas { get; private set; }
-        public string BuktiFoto { get; set; }
 
-        public Pengiriman(Pelanggan pelanggan, DateTime tanggalHariIni)
+        // Subjek Observer Pattern
+        public void Attach(IObserver observer)
         {
-            // Design by Contract: Pre-conditions
-            Debug.Assert(pelanggan != null, "Pelanggan tidak boleh null!");
-            if (pelanggan == null) throw new ArgumentNullException(nameof(pelanggan), "Data pelanggan tidak valid.");
-
-            DataPelanggan = pelanggan;
-            StatusKirim = (StatusPengiriman)0;
-            StatusBayar = StatusPembayaran.Bon;
-            BuktiFoto = string.Empty;
-
-            // Kalkulasi prioritas saat pesanan di-generate hari ini
-            UpdatePrioritas(tanggalHariIni);
+            if (!_observers.Contains(observer))
+            {
+                _observers.Add(observer);
+            }
         }
 
-        public void UpdatePrioritas(DateTime tanggalHariIni)
+        public void Detach(IObserver observer)
         {
-            Prioritas = PrioritasChecker.HitungPrioritas(DataPelanggan.JadwalBerikutnya(), tanggalHariIni);
+            _observers.Remove(observer);
+        }
+
+        public void Notify()
+        {
+            foreach (var observer in _observers)
+            {
+                observer.Update($"Pengiriman ke {DataPelanggan.NamaPelanggan} Selesai!");
+            }
         }
     }
 }

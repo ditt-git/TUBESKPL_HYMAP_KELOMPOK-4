@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HYMAPSOPIR;
 using System;
 
@@ -22,44 +22,9 @@ namespace HYMAPSOPIR.Tests
         public void DetailPengiriman_BisaDiinisialisasiTanpaCrash()
         {
             // Arrange
-            Pelanggan dummyPelanggan = new Pelanggan("P1", "Test", "Alamat", Armada.Denpasar, DateTime.Now);
-            Pengiriman dummyTugas = new Pengiriman(dummyPelanggan, DateTime.Now);
+            Pelanggan dummyPelanggan = new Pelanggan("P1", "Test", "Alamat", Armada.Denpasar, DateTime.Now, 0);
 
-            // Act
-            using (DetailPengiriman form = new DetailPengiriman(dummyTugas))
-            {
-                // Assert
-                Assert.IsNotNull(form);
-            }
-        }
-    }
-
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HYMAPSOPIR;
-using System;
-
-namespace HYMAPSOPIR.Tests
-{
-    [TestClass]
-    public class GUITests
-    {
-        [TestMethod]
-        public void FormLogin_BisaDiinisialisasiTanpaCrash()
-        {
-            // Act
-            using (FormLogin form = new FormLogin())
-            {
-                // Assert
-                Assert.IsNotNull(form);
-            }
-        }
-
-        [TestMethod]
-        public void DetailPengiriman_BisaDiinisialisasiTanpaCrash()
-        {
-            // Arrange
-            Pelanggan dummyPelanggan = new Pelanggan("P1", "Test", "Alamat", Armada.Denpasar, DateTime.Now);
-            Pengiriman dummyTugas = new Pengiriman(dummyPelanggan, DateTime.Now);
+            Pengiriman dummyTugas = new Pengiriman(dummyPelanggan, DateTime.Now, 1);
 
             // Act
             using (DetailPengiriman form = new DetailPengiriman(dummyTugas))

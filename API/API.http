@@ -1,15 +1,6 @@
-<<<<<<< HEAD
 @API_HostAddress = http://localhost:5010
 
 GET {{API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
-=======
-@API_HostAddress = http://localhost:5010
-
-GET {{API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
->>>>>>> IGedePutuArthaJayaW
