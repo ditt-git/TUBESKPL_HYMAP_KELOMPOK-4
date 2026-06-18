@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\API\\API.csproj": {}
+    "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\API\\API.csproj": {
+    "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\API\\API.csproj",
+        "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\API\\obj\\",
+        "outputPath": "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\Library\\Library.csproj": {
-                "projectPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\Library\\Library.csproj"
+              "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj": {
+                "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj"
               }
             }
           }
@@ -506,14 +506,14 @@
         }
       }
     },
-    "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\Library\\Library.csproj": {
+    "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\Library\\Library.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\Library\\Library.csproj",
+        "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Downloads\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\HYMAPSOPIR REVISI 9 JUNI\\Library\\obj\\",
+        "outputPath": "C:\\Users\\asus\\OneDrive\\Documents\\GitHub\\Hymap\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

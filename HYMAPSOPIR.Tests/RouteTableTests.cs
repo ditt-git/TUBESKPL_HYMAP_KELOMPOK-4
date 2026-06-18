@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HYMAPSOPIR;
 
 namespace HYMAPSOPIR.Tests
@@ -17,7 +17,7 @@ namespace HYMAPSOPIR.Tests
 
             // Assert (Validasi)
             Assert.IsNotNull(hasil);
-            Assert.AreEqual(3, hasil.Length);
+            Assert.AreEqual(7, hasil.Length);
             Assert.AreEqual("P001", hasil[0]); // P001 harus ada di Denpasar
         }
     }

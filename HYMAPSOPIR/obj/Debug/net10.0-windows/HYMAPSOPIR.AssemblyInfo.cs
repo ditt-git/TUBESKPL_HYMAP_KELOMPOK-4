@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HYMAPSOPIR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+466123b5bce3965aae9b525bf9ab052e9b2fff30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("HYMAPSOPIR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HYMAPSOPIR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\API\API.csproj" />
-    <ProjectReference Include="..\HYMAPSOPIR\HYMAPSOPIR.csproj" />
+    <ProjectReference Include="..\HYMAPSOPIR\HYMAPSOPIR - VIEW.csproj" />
     <ProjectReference Include="..\Library\Library.csproj" />
   </ItemGroup>
 

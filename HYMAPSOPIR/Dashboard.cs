@@ -5,29 +5,27 @@ using static System.Windows.Forms.DataFormats;
 
 namespace HYMAPSOPIR
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard : Form, IObserver
     {
         private Sopir sopirAktif;
         private List<Pelanggan> databasePelanggan;
         private DateTime currentDate;
+        private JadwalService serviceJadwal;
+        private AudioTerkirim _audioObserver = new AudioTerkirim();
 
-        public Dashboard()
+        public Dashboard(Sopir sopir)
         {
             InitializeComponent();
 
-            sopirAktif = SopirSession.Instance.SopirAktif;
+            this.sopirAktif = sopir;
 
-            // Ambil tanggal dari DateTimePicker
+            this.serviceJadwal = new JadwalService();
+
+
             currentDate = dtpTanggal.Value;
 
-            // Subscriber OBSERVER 
-            NotificationService.Instance.PesanBaruMasuk += Sistem_PesanBaruMasuk;
+            this.serviceJadwal.CekDanGenerateJadwalHariIni(this.sopirAktif, currentDate);
 
-            NotifSopir.PengumumanSopir();
-
-            // Set tugas sopir berdasarkan tanggal tersebut
-            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
-            sopirAktif.SetTugasBerdasarkanArmada(databasePelanggan, currentDate);
 
             // Tampilkan nama dan armada
             lblNamaSopir.Text = sopirAktif.Nama;
@@ -38,18 +36,22 @@ namespace HYMAPSOPIR
 
         }
 
-        private void Sistem_PesanBaruMasuk(object sender, string isiPesan)
-        {
-            MessageBox.Show($" Semangat Kerja {sopirAktif.Nama}! \n {isiPesan}", "Informasi Dari Admin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-
         private void BindDataPengiriman()
         {
+            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
+
+            this.serviceJadwal.SetTugasBerdasarkanArmada(this.sopirAktif, databasePelanggan, currentDate);
+
             var listTugas = sopirAktif.DaftarTugasHariIni;
             var displayList = new List<object>();
 
+
             foreach (var tugas in listTugas)
             {
+                // Attach observer pattern 
+                tugas.Attach(this);
+                tugas.Attach(_audioObserver);
+
                 displayList.Add(new
                 {
                     NamaPelanggan = tugas.DataPelanggan.NamaPelanggan,
@@ -63,6 +65,12 @@ namespace HYMAPSOPIR
             dgvPengiriman.DataSource = null;
             dgvPengiriman.DataSource = displayList;
             dgvPengiriman.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+
+        // Notifikasi observer pattern untuk menerima notifikasi perubahan status pengiriman
+        public void Update(string notifikasiTerkirim)
+        {
+            MessageBox.Show(notifikasiTerkirim, "Notifikasi Sistem", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 
@@ -87,15 +95,13 @@ namespace HYMAPSOPIR
             BindDataPengiriman();
         }
 
-
-
         // Event ketika tanggal berubah
         private void dtpTanggal_ValueChanged_1(object sender, EventArgs e)
         {
             currentDate = dtpTanggal.Value;
-            // Refresh tugas berdasarkan tanggal baru
-            databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
-            sopirAktif.SetTugasBerdasarkanArmada(databasePelanggan, currentDate);
+
+            this.serviceJadwal.CekDanGenerateJadwalHariIni(this.sopirAktif, currentDate);
+
             BindDataPengiriman();
         }
 
@@ -110,9 +116,8 @@ namespace HYMAPSOPIR
 
             if (result == DialogResult.Yes)
             {
-                FormLogin halamanBaru = new FormLogin();
-                halamanBaru.Show();
-                this.Hide();
+
+                this.Close();
             }
 
 

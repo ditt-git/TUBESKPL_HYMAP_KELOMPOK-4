@@ -1,4 +1,4 @@
-﻿namespace HYMAPSOPIR
+namespace HYMAPSOPIR
 {
     partial class DetailPengiriman
     {
@@ -30,10 +30,8 @@
         {
             labelNamaPelanggan = new Label();
             labelAlamatPelanggan = new Label();
-            labelBuktiKirim = new Label();
             label = new Label();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
@@ -45,12 +43,18 @@
             radioButton3 = new RadioButton();
             button1 = new Button();
             buttonLanjut = new Button();
+            label6 = new Label();
+            numGalonKembali = new NumericUpDown();
+            label7 = new Label();
+            label8 = new Label();
+            jumlahpinjamgalon = new Label();
+            ((System.ComponentModel.ISupportInitialize)numGalonKembali).BeginInit();
             SuspendLayout();
             // 
             // labelNamaPelanggan
             // 
             labelNamaPelanggan.AutoSize = true;
-            labelNamaPelanggan.Location = new Point(226, 58);
+            labelNamaPelanggan.Location = new Point(226, 59);
             labelNamaPelanggan.Name = "labelNamaPelanggan";
             labelNamaPelanggan.Size = new Size(50, 20);
             labelNamaPelanggan.TabIndex = 0;
@@ -66,19 +70,10 @@
             labelAlamatPelanggan.TabIndex = 1;
             labelAlamatPelanggan.Text = "label1";
             // 
-            // labelBuktiKirim
-            // 
-            labelBuktiKirim.AutoSize = true;
-            labelBuktiKirim.Location = new Point(226, 134);
-            labelBuktiKirim.Name = "labelBuktiKirim";
-            labelBuktiKirim.Size = new Size(50, 20);
-            labelBuktiKirim.TabIndex = 2;
-            labelBuktiKirim.Text = "label1";
-            // 
             // label
             // 
             label.AutoSize = true;
-            label.Location = new Point(31, 58);
+            label.Location = new Point(31, 59);
             label.Name = "label";
             label.Size = new Size(56, 20);
             label.TabIndex = 3;
@@ -94,20 +89,10 @@
             label1.TabIndex = 4;
             label1.Text = "Alamat : ";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(31, 134);
-            label2.Name = "label2";
-            label2.Size = new Size(90, 20);
-            label2.TabIndex = 5;
-            label2.Text = "Bukti kirim : ";
-            label2.Click += label2_Click;
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(32, 222);
+            label3.Location = new Point(32, 221);
             label3.Name = "label3";
             label3.Size = new Size(127, 20);
             label3.TabIndex = 6;
@@ -116,18 +101,19 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(36, 263);
+            radioButton1.Location = new Point(37, 263);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(127, 24);
             radioButton1.TabIndex = 7;
             radioButton1.TabStop = true;
             radioButton1.Text = "Belum terkirim";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(36, 293);
+            radioButton2.Location = new Point(37, 293);
             radioButton2.Name = "radioButton2";
             radioButton2.RightToLeft = RightToLeft.No;
             radioButton2.Size = new Size(83, 24);
@@ -158,7 +144,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(31, 168);
+            label5.Location = new Point(31, 142);
             label5.Name = "label5";
             label5.Size = new Size(69, 20);
             label5.TabIndex = 11;
@@ -167,7 +153,7 @@
             // labelArmada
             // 
             labelArmada.AutoSize = true;
-            labelArmada.Location = new Point(226, 168);
+            labelArmada.Location = new Point(226, 142);
             labelArmada.Name = "labelArmada";
             labelArmada.Size = new Size(50, 20);
             labelArmada.TabIndex = 12;
@@ -185,7 +171,7 @@
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(36, 323);
+            radioButton3.Location = new Point(37, 323);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(117, 24);
             radioButton3.TabIndex = 14;
@@ -195,7 +181,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 12);
+            button1.Location = new Point(11, 12);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(73, 27);
@@ -206,7 +192,7 @@
             // 
             // buttonLanjut
             // 
-            buttonLanjut.Location = new Point(172, 528);
+            buttonLanjut.Location = new Point(171, 528);
             buttonLanjut.Name = "buttonLanjut";
             buttonLanjut.Size = new Size(94, 29);
             buttonLanjut.TabIndex = 16;
@@ -214,11 +200,62 @@
             buttonLanjut.UseVisualStyleBackColor = true;
             buttonLanjut.Click += buttonLanjut_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(248, 16);
+            label6.Name = "label6";
+            label6.Size = new Size(74, 20);
+            label6.TabIndex = 17;
+            label6.Text = "Prioritas : ";
+            // 
+            // numGalonKembali
+            // 
+            numGalonKembali.Location = new Point(231, 325);
+            numGalonKembali.Name = "numGalonKembali";
+            numGalonKembali.Size = new Size(150, 27);
+            numGalonKembali.TabIndex = 18;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(223, 293);
+            label7.Name = "label7";
+            label7.Size = new Size(155, 20);
+            label7.TabIndex = 19;
+            label7.Text = "Jumlah Galon kembali";
+            label7.Click += label7_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(219, 221);
+            label8.Name = "label8";
+            label8.Size = new Size(175, 20);
+            label8.TabIndex = 20;
+            label8.Text = "Jumlah galon di pinjam : ";
+            // 
+            // jumlahpinjamgalon
+            // 
+            jumlahpinjamgalon.AutoSize = true;
+            jumlahpinjamgalon.Location = new Point(226, 251);
+            jumlahpinjamgalon.Name = "jumlahpinjamgalon";
+            jumlahpinjamgalon.Size = new Size(17, 20);
+            jumlahpinjamgalon.TabIndex = 21;
+            jumlahpinjamgalon.Text = "0";
+            jumlahpinjamgalon.Click += label9_Click;
+            // 
             // DetailPengiriman
             // 
+            AcceptButton = buttonLanjut;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(425, 600);
+            Controls.Add(jumlahpinjamgalon);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(numGalonKembali);
+            Controls.Add(label6);
             Controls.Add(buttonLanjut);
             Controls.Add(button1);
             Controls.Add(radioButton3);
@@ -230,15 +267,14 @@
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(label);
-            Controls.Add(labelBuktiKirim);
             Controls.Add(labelAlamatPelanggan);
             Controls.Add(labelNamaPelanggan);
             Name = "DetailPengiriman";
             Text = "DetailPengiriman";
             Load += DetailPengiriman_Load;
+            ((System.ComponentModel.ISupportInitialize)numGalonKembali).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -247,10 +283,8 @@
 
         private Label labelNamaPelanggan;
         private Label labelAlamatPelanggan;
-        private Label labelBuktiKirim;
         private Label label;
         private Label label1;
-        private Label label2;
         private Label label3;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
@@ -262,5 +296,10 @@
         private RadioButton radioButton3;
         private Button button1;
         private Button buttonLanjut;
+        private Label label6;
+        private NumericUpDown numGalonKembali;
+        private Label label7;
+        private Label label8;
+        private Label jumlahpinjamgalon;
     }
 }

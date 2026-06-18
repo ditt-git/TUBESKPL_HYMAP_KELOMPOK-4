@@ -1,4 +1,4 @@
-﻿using HYMAPSOPIR;
+using HYMAPSOPIR;
 
 namespace API.Models
 {
@@ -6,7 +6,7 @@ namespace API.Models
         {
             public StatusPengiriman StatusKirim { get; set; }
             public StatusPembayaran StatusBayar { get; set; }
-            public string BuktiFoto { get; set; } = string.Empty;
+
         }
         public class TambahTugas
         {
