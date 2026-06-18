@@ -621,11 +621,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HYMAPSOPIR REVISI 10 JUNI\\API\\API.csproj",
+      "projectUniqueName": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\API\\API.csproj",
+      "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj",
       "packagesPath": "C:\\Users\\firdaus-macbook\\.nuget\\packages\\",
-      "outputPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\API\\obj\\",
+      "outputPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -646,8 +646,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\HYMAPSOPIR REVISI 10 JUNI\\Library\\Library.csproj": {
-              "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\Library\\Library.csproj"
+            "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj": {
+              "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj"
             }
           }
         }

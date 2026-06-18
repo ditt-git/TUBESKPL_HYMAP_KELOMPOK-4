@@ -1,4 +1,4 @@
-﻿using Library.Database;
+using Library.Database;
 using HYMAPSOPIR;
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -46,7 +46,7 @@ namespace HYMAP.API.Controllers
 
             if (sopir == null || pelanggan == null) return BadRequest("Data tidak valid.");
 
-            var tugasBaru = new Pengiriman(pelanggan, post.TanggalTugas);
+            var tugasBaru = new Pengiriman(pelanggan, post.TanggalTugas, sopir.IdUserDb);
 
             PengirimanDAO.SimpanJadwalPengiriman(tugasBaru);
 

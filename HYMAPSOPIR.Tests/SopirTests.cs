@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HYMAPSOPIR;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace HYMAPSOPIR.Tests
         public void ConstructorSopir_DataValid_BerhasilDibuat()
         {
             // Act
-            Sopir sopirBaru = new Sopir("Andi", "andi_id", "123", Armada.Denpasar);
+            Sopir sopirBaru = new Sopir(1, "Andi", "andi_id", "123", Armada.Denpasar);
 
             // Assert
             Assert.AreEqual("andi_id", sopirBaru.Id);
@@ -29,7 +29,7 @@ namespace HYMAPSOPIR.Tests
             try
             {
                 // ACT
-                Sopir sopirGagal = new Sopir("", "username", "pass", Armada.Denpasar);
+                Sopir sopirGagal = new Sopir(2, "", "username", "pass", Armada.Denpasar);
                 Assert.Fail("Validasi gagal! Objek Sopir berhasil dibuat padahal namanya kosong.");
             }
             catch (ArgumentException)
@@ -49,11 +49,11 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void SetTugas_DataPelangganNull_BypassSistemAman()
         {
-            Sopir sopir = new Sopir("Budi", "budi123", "pass", Armada.Denpasar);
+            Sopir sopir = new Sopir(3, "Budi", "budi123", "pass", Armada.Denpasar);
             JadwalService service = new JadwalService(); 
 
             // Act
-            service.SetTugasBerdasarkanArmada(sopir, null, DateTime.Now);
+            service.SetTugasBerdasarkanArmada(sopir, null!, DateTime.Now);
 
             // Assert
             Assert.AreEqual(0, sopir.DaftarTugasHariIni.Count);
@@ -62,7 +62,7 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void SetTugas_AdaPelangganSesuaiRute_MasukKeDaftarTugas()
         {
-            Sopir sopir = new Sopir("Budi", "budi123", "pass", Armada.Denpasar); // Rute P001, P004, P007
+            Sopir sopir = new Sopir(4, "Budi", "budi123", "pass", Armada.Denpasar); // Rute P001, P004, P007
             var daftarPelanggan = new List<Pelanggan>
             {
                 new Pelanggan("P001", "Tono", "Alamat", Armada.Denpasar, DateTime.Now.AddDays(-14), 0), // Valid
@@ -85,9 +85,9 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void AmbilTugas_NomorValid_MengembalikanTugas()
         {
-            Sopir sopir = new Sopir("Budi", "budi123", "pass", Armada.Denpasar);
+            Sopir sopir = new Sopir(5, "Budi", "budi123", "pass", Armada.Denpasar);
             Pelanggan p = new Pelanggan("P001", "Tono", "Alamat", Armada.Denpasar, DateTime.Now, 0); // Tambah 0
-            sopir.DaftarTugasHariIni.Add(new Pengiriman(p, DateTime.Now)); // Tambah 1 tugas manual
+            sopir.DaftarTugasHariIni.Add(new Pengiriman(p, DateTime.Now, sopir.IdUserDb)); // Tambah 1 tugas manual
 
             JadwalService service = new JadwalService();
 
@@ -101,7 +101,7 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void AmbilTugas_NomorDiLuarBatas_MengembalikanNull()
         {
-            Sopir sopir = new Sopir("Budi", "budi123", "pass", Armada.Denpasar);
+            Sopir sopir = new Sopir(6, "Budi", "budi123", "pass", Armada.Denpasar);
             JadwalService service = new JadwalService();
 
             // Act
@@ -121,7 +121,7 @@ namespace HYMAPSOPIR.Tests
             // Act & Assert
             try
             {
-                var cmd = new Library.Commands.UpdatePengirimanCommand(null, StatusPengiriman.SudahTerkirim, StatusPembayaran.Cash, 0);
+                var cmd = new Library.Commands.UpdatePengirimanCommand(null!, StatusPengiriman.SudahTerkirim, StatusPembayaran.Cash, 0);
                 cmd.Execute();
                 Assert.Fail("Harusnya melempar exception karena tugas null.");
             }
@@ -131,34 +131,14 @@ namespace HYMAPSOPIR.Tests
             }
         }
 
-        [TestMethod]
-        public void EksekusiPengirimanCommand_StatusTerkirimTapiFotoKosong_Ditolak()
-        {
-            Pelanggan p = new Pelanggan("P001", "Tono", "Alamat", Armada.Denpasar, DateTime.Now.AddDays(-5), 0);
-            Pengiriman tugas = new Pengiriman(p, DateTime.Now);
-            tugas.BuktiFoto = ""; // Dikosongkan
 
-            var cmd = new Library.Commands.UpdatePengirimanCommand(tugas, StatusPengiriman.SudahTerkirim, StatusPembayaran.Cash, 0);
-
-            try
-            {
-                cmd.Execute(); // Act
-            }
-            catch (Exception)
-            {
-               
-            }
-
-            // Assert: Karena gagal, tanggal kirim tidak boleh ter-update
-            Assert.AreEqual(DateTime.Now.AddDays(-5).Date, p.TanggalTerakhirKirim.Date);
-        }
 
         [TestMethod]
         public void EksekusiPengirimanCommand_Sukses_TanggalBerubah()
         {
             Pelanggan p = new Pelanggan("P001", "Tono", "Alamat", Armada.Denpasar, DateTime.Now.AddDays(-5), 0);
-            Pengiriman tugas = new Pengiriman(p, DateTime.Now);
-            tugas.BuktiFoto = "bukti.jpg"; // Foto diisi
+            Pengiriman tugas = new Pengiriman(p, DateTime.Now, 1);
+
 
             // Act
             var cmd = new Library.Commands.UpdatePengirimanCommand(tugas, StatusPengiriman.SudahTerkirim, StatusPembayaran.Cash, 0);
@@ -176,7 +156,7 @@ namespace HYMAPSOPIR.Tests
         [Timeout(2000)] // Batas maksimal eksekusi adalah 2 detik
         public void PerformanceTest_SetTugas_SeratusRibuData()
         {
-            Sopir sopir = new Sopir("Budi", "budi123", "pass", Armada.Denpasar);
+            Sopir sopir = new Sopir(7, "Budi", "budi123", "pass", Armada.Denpasar);
             var dataMassal = new List<Pelanggan>();
 
             // Generate 100.000 data fiktif

@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HYMAPSOPIR;
 using System;
 
@@ -24,7 +24,7 @@ namespace HYMAPSOPIR.Tests
             // Arrange
             Pelanggan dummyPelanggan = new Pelanggan("P1", "Test", "Alamat", Armada.Denpasar, DateTime.Now, 0);
 
-            Pengiriman dummyTugas = new Pengiriman(dummyPelanggan, DateTime.Now);
+            Pengiriman dummyTugas = new Pengiriman(dummyPelanggan, DateTime.Now, 1);
 
             // Act
             using (DetailPengiriman form = new DetailPengiriman(dummyTugas))

@@ -9,7 +9,7 @@ namespace HYMAPSOPIR
     {
         public void CekDanGenerateJadwalHariIni(Sopir sopir, DateTime tanggalPilih)
         {
-            Library.Database.SopirDAO.GenerateJadwalSopir(sopir.Username, sopir.ArmadaTugas, tanggalPilih);
+            Library.Database.SopirDAO.GenerateJadwalSopir(sopir.Username, sopir.ArmadaTugas, tanggalPilih, sopir.IdUserDb);
         }
 
         public void SetTugasBerdasarkanArmada(Sopir sopir, List<Pelanggan> semuaPelanggan, DateTime hariIni)
@@ -41,14 +41,13 @@ namespace HYMAPSOPIR
                 }
                 else
                 {
-                    Pengiriman tugasBaru = new Pengiriman(p, hariIni);
+                    Pengiriman tugasBaru = new Pengiriman(p, hariIni, sopir.IdUserDb);
                     tugasBaru.Prioritas = PrioritasChecker.HitungPrioritas(p.JadwalBerikutnya(), hariIni);
 
-                    if (Library.Database.PengirimanDAO.CekStatusLaporan(p.IdPelanggan, hariIni, out StatusPengiriman stKirim, out StatusPembayaran stBayar, out string foto))
+                    if (Library.Database.PengirimanDAO.CekStatusLaporan(p.IdPelanggan, hariIni, out StatusPengiriman stKirim, out StatusPembayaran stBayar))
                     {
                         tugasBaru.StatusKirim = stKirim;
                         tugasBaru.StatusBayar = stBayar;
-                        tugasBaru.BuktiFoto = foto;
                     }
                     tugasBaruAtauLama.Add(tugasBaru);
                 }

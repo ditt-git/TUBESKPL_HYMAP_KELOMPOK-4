@@ -10,6 +10,7 @@ namespace HYMAPSOPIR
         private List<IObserver> _observers = new List<IObserver>();
         private StatusPengiriman _statusKirim;
 
+        public int IdUserSopir { get; set; }
         public Pelanggan DataPelanggan { get; }
         public StatusPengiriman StatusKirim
         {
@@ -25,19 +26,20 @@ namespace HYMAPSOPIR
         }
         public StatusPembayaran StatusBayar { get; set; }
         public PrioritasPengiriman Prioritas { get; set; }
-        public string BuktiFoto { get; set; }
+
         public int GalonKembali { get; set; }
         public DateTime TanggalTugas { get; set; }
-        public Pengiriman(Pelanggan pelanggan, DateTime tanggalHariIni)
+        public Pengiriman(Pelanggan pelanggan, DateTime tanggalHariIni, int idUserSopir)
         {
             // Design by Contract: Pre-conditions
             Debug.Assert(pelanggan != null, "Pelanggan tidak boleh null!");
             if (pelanggan == null) throw new ArgumentNullException(nameof(pelanggan), "Data pelanggan tidak valid.");
 
+            IdUserSopir = idUserSopir;
             DataPelanggan = pelanggan;
             StatusKirim = (StatusPengiriman)0;
             StatusBayar = StatusPembayaran.Bon;
-            BuktiFoto = string.Empty;
+
             GalonKembali = 0;
             TanggalTugas = tanggalHariIni;
 

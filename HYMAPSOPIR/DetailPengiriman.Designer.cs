@@ -1,4 +1,4 @@
-﻿namespace HYMAPSOPIR
+namespace HYMAPSOPIR
 {
     partial class DetailPengiriman
     {
@@ -30,10 +30,8 @@
         {
             labelNamaPelanggan = new Label();
             labelAlamatPelanggan = new Label();
-            labelBuktiKirim = new Label();
             label = new Label();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
@@ -56,9 +54,9 @@
             // labelNamaPelanggan
             // 
             labelNamaPelanggan.AutoSize = true;
-            labelNamaPelanggan.Location = new Point(198, 44);
+            labelNamaPelanggan.Location = new Point(226, 59);
             labelNamaPelanggan.Name = "labelNamaPelanggan";
-            labelNamaPelanggan.Size = new Size(38, 15);
+            labelNamaPelanggan.Size = new Size(50, 20);
             labelNamaPelanggan.TabIndex = 0;
             labelNamaPelanggan.Text = "label1";
             labelNamaPelanggan.Click += labelNamaPelanggan_Click;
@@ -66,27 +64,18 @@
             // labelAlamatPelanggan
             // 
             labelAlamatPelanggan.AutoSize = true;
-            labelAlamatPelanggan.Location = new Point(198, 72);
+            labelAlamatPelanggan.Location = new Point(226, 96);
             labelAlamatPelanggan.Name = "labelAlamatPelanggan";
-            labelAlamatPelanggan.Size = new Size(38, 15);
+            labelAlamatPelanggan.Size = new Size(50, 20);
             labelAlamatPelanggan.TabIndex = 1;
             labelAlamatPelanggan.Text = "label1";
-            // 
-            // labelBuktiKirim
-            // 
-            labelBuktiKirim.AutoSize = true;
-            labelBuktiKirim.Location = new Point(198, 100);
-            labelBuktiKirim.Name = "labelBuktiKirim";
-            labelBuktiKirim.Size = new Size(38, 15);
-            labelBuktiKirim.TabIndex = 2;
-            labelBuktiKirim.Text = "label1";
             // 
             // label
             // 
             label.AutoSize = true;
-            label.Location = new Point(27, 44);
+            label.Location = new Point(31, 59);
             label.Name = "label";
-            label.Size = new Size(45, 15);
+            label.Size = new Size(56, 20);
             label.TabIndex = 3;
             label.Text = "Nama :";
             label.Click += label_Click;
@@ -94,38 +83,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 72);
+            label1.Location = new Point(31, 96);
             label1.Name = "label1";
-            label1.Size = new Size(54, 15);
+            label1.Size = new Size(68, 20);
             label1.TabIndex = 4;
             label1.Text = "Alamat : ";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(27, 100);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Bukti kirim : ";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(28, 166);
+            label3.Location = new Point(32, 221);
             label3.Name = "label3";
-            label3.Size = new Size(103, 15);
+            label3.Size = new Size(127, 20);
             label3.TabIndex = 6;
             label3.Text = "Status Pengiriman";
             // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(32, 197);
-            radioButton1.Margin = new Padding(3, 2, 3, 2);
+            radioButton1.Location = new Point(37, 263);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(103, 19);
+            radioButton1.Size = new Size(127, 24);
             radioButton1.TabIndex = 7;
             radioButton1.TabStop = true;
             radioButton1.Text = "Belum terkirim";
@@ -135,11 +113,10 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(32, 220);
-            radioButton2.Margin = new Padding(3, 2, 3, 2);
+            radioButton2.Location = new Point(37, 293);
             radioButton2.Name = "radioButton2";
             radioButton2.RightToLeft = RightToLeft.No;
-            radioButton2.Size = new Size(67, 19);
+            radioButton2.Size = new Size(83, 24);
             radioButton2.TabIndex = 8;
             radioButton2.TabStop = true;
             radioButton2.Text = "Terkirim";
@@ -149,9 +126,9 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(27, 297);
+            label4.Location = new Point(31, 396);
             label4.Name = "label4";
-            label4.Size = new Size(108, 15);
+            label4.Size = new Size(134, 20);
             label4.TabIndex = 9;
             label4.Text = "Status Pembayaran";
             // 
@@ -159,46 +136,44 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "BelumBayar ", "Cash", "Transfer ", "Bon " });
-            comboBox1.Location = new Point(27, 327);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
+            comboBox1.Location = new Point(31, 436);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
+            comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 10;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(27, 126);
+            label5.Location = new Point(31, 142);
             label5.Name = "label5";
-            label5.Size = new Size(55, 15);
+            label5.Size = new Size(69, 20);
             label5.TabIndex = 11;
             label5.Text = "Armada :";
             // 
             // labelArmada
             // 
             labelArmada.AutoSize = true;
-            labelArmada.Location = new Point(198, 126);
+            labelArmada.Location = new Point(226, 142);
             labelArmada.Name = "labelArmada";
-            labelArmada.Size = new Size(38, 15);
+            labelArmada.Size = new Size(50, 20);
             labelArmada.TabIndex = 12;
             labelArmada.Text = "label6";
             // 
             // labelPrioritas
             // 
             labelPrioritas.AutoSize = true;
-            labelPrioritas.Location = new Point(289, 11);
+            labelPrioritas.Location = new Point(330, 15);
             labelPrioritas.Name = "labelPrioritas";
-            labelPrioritas.Size = new Size(50, 15);
+            labelPrioritas.Size = new Size(63, 20);
             labelPrioritas.TabIndex = 13;
             labelPrioritas.Text = "Prioritas";
             // 
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(32, 242);
-            radioButton3.Margin = new Padding(3, 2, 3, 2);
+            radioButton3.Location = new Point(37, 323);
             radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
+            radioButton3.Size = new Size(117, 24);
             radioButton3.TabIndex = 14;
             radioButton3.TabStop = true;
             radioButton3.Text = "radioButton3";
@@ -206,9 +181,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(10, 9);
+            button1.Location = new Point(11, 12);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(64, 20);
+            button1.Size = new Size(73, 27);
             button1.TabIndex = 15;
             button1.Text = "Kembali";
             button1.UseVisualStyleBackColor = true;
@@ -216,10 +192,9 @@
             // 
             // buttonLanjut
             // 
-            buttonLanjut.Location = new Point(150, 396);
-            buttonLanjut.Margin = new Padding(3, 2, 3, 2);
+            buttonLanjut.Location = new Point(171, 528);
             buttonLanjut.Name = "buttonLanjut";
-            buttonLanjut.Size = new Size(82, 22);
+            buttonLanjut.Size = new Size(94, 29);
             buttonLanjut.TabIndex = 16;
             buttonLanjut.Text = "Lanjut";
             buttonLanjut.UseVisualStyleBackColor = true;
@@ -228,26 +203,25 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(217, 12);
+            label6.Location = new Point(248, 16);
             label6.Name = "label6";
-            label6.Size = new Size(59, 15);
+            label6.Size = new Size(74, 20);
             label6.TabIndex = 17;
             label6.Text = "Prioritas : ";
             // 
             // numGalonKembali
             // 
-            numGalonKembali.Location = new Point(202, 244);
-            numGalonKembali.Margin = new Padding(3, 2, 3, 2);
+            numGalonKembali.Location = new Point(231, 325);
             numGalonKembali.Name = "numGalonKembali";
-            numGalonKembali.Size = new Size(131, 23);
+            numGalonKembali.Size = new Size(150, 27);
             numGalonKembali.TabIndex = 18;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(195, 220);
+            label7.Location = new Point(223, 293);
             label7.Name = "label7";
-            label7.Size = new Size(124, 15);
+            label7.Size = new Size(155, 20);
             label7.TabIndex = 19;
             label7.Text = "Jumlah Galon kembali";
             label7.Click += label7_Click;
@@ -255,18 +229,18 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(192, 166);
+            label8.Location = new Point(219, 221);
             label8.Name = "label8";
-            label8.Size = new Size(140, 15);
+            label8.Size = new Size(175, 20);
             label8.TabIndex = 20;
             label8.Text = "Jumlah galon di pinjam : ";
             // 
             // jumlahpinjamgalon
             // 
             jumlahpinjamgalon.AutoSize = true;
-            jumlahpinjamgalon.Location = new Point(198, 188);
+            jumlahpinjamgalon.Location = new Point(226, 251);
             jumlahpinjamgalon.Name = "jumlahpinjamgalon";
-            jumlahpinjamgalon.Size = new Size(13, 15);
+            jumlahpinjamgalon.Size = new Size(17, 20);
             jumlahpinjamgalon.TabIndex = 21;
             jumlahpinjamgalon.Text = "0";
             jumlahpinjamgalon.Click += label9_Click;
@@ -274,9 +248,9 @@
             // DetailPengiriman
             // 
             AcceptButton = buttonLanjut;
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(372, 450);
+            ClientSize = new Size(425, 600);
             Controls.Add(jumlahpinjamgalon);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -293,13 +267,10 @@
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(label);
-            Controls.Add(labelBuktiKirim);
             Controls.Add(labelAlamatPelanggan);
             Controls.Add(labelNamaPelanggan);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "DetailPengiriman";
             Text = "DetailPengiriman";
             Load += DetailPengiriman_Load;
@@ -312,10 +283,8 @@
 
         private Label labelNamaPelanggan;
         private Label labelAlamatPelanggan;
-        private Label labelBuktiKirim;
         private Label label;
         private Label label1;
-        private Label label2;
         private Label label3;
         private RadioButton radioButton1;
         private RadioButton radioButton2;

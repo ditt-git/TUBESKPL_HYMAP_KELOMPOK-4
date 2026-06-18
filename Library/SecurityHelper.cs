@@ -12,7 +12,7 @@ namespace HYMAPSOPIR
             {
                 byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
 
-                // Maintainable & KISS
+                // KISS
                 return BitConverter.ToString(bytes).Replace("-", "").ToLower();
             }
         }

@@ -15,11 +15,13 @@ namespace HYMAPSOPIR
 
         // Mendeklarasikan event Observer
         public event EventHandler DataPengirimanDiubah;
+        private DetailPengirimanPresenter _presenter;
 
         public DetailPengiriman(Pengiriman tugas)
         {
             InitializeComponent();
             tugasPengiriman = tugas;
+            _presenter = new DetailPengirimanPresenter(tugas);
 
             radioButton1.Text = "Belum Terkirim";
             radioButton2.Text = "Sudah Terkirim";
@@ -29,7 +31,7 @@ namespace HYMAPSOPIR
             labelAlamatPelanggan.Text = tugas.DataPelanggan.Alamat;
             labelArmada.Text = tugas.DataPelanggan.Wilayah.ToString();
             labelPrioritas.Text = tugas.Prioritas.ToString();
-            labelBuktiKirim.Text = string.IsNullOrEmpty(tugas.BuktiFoto) ? "-" : tugas.BuktiFoto;
+
             jumlahpinjamgalon.Text = tugas.DataPelanggan.GalonDipinjam.ToString() + " Galon";
 
             if (tugas.StatusKirim == (StatusPengiriman)0) radioButton1.Checked = true;
@@ -54,32 +56,10 @@ namespace HYMAPSOPIR
         {
             try
             {
-                StatusPengiriman statusKirimBaru;
-                if (radioButton1.Checked) statusKirimBaru = (StatusPengiriman)0;
-                else if (radioButton2.Checked) statusKirimBaru = (StatusPengiriman)1;
-                else statusKirimBaru = (StatusPengiriman)2;
+                string metodeBayar = comboBox1.SelectedItem?.ToString() ?? "Bon";
+                int galonKembali = (int)numGalonKembali.Value;
 
-                StatusPembayaran statusBayarBaru = StatusPembayaran.Bon;
-                if (comboBox1.SelectedItem != null)
-                {
-                    string bayar = comboBox1.SelectedItem.ToString();
-                    if (bayar == "Cash") statusBayarBaru = StatusPembayaran.Cash;
-                    else if (bayar == "Transfer") statusBayarBaru = StatusPembayaran.Transfer;
-                    else statusBayarBaru = StatusPembayaran.Bon;
-                }
-
-                int galonKembaliInput = (int)numGalonKembali.Value;
-
-                // Menggunakan Command Pattern
-                Library.Commands.ICommand updateCommand = new Library.Commands.UpdatePengirimanCommand(
-                    tugasPengiriman,
-                    statusKirimBaru,
-                    statusBayarBaru,
-                    galonKembaliInput
-                );
-
-                updateCommand.Execute();
-
+                _presenter.UpdateData(radioButton1.Checked, radioButton2.Checked, metodeBayar, galonKembali);
 
                 MessageBox.Show("Data berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

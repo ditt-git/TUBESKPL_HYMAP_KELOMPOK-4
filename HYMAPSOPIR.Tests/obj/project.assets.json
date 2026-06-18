@@ -2735,11 +2735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR.Tests\\HYMAPSOPIR.Tests.csproj",
+      "projectUniqueName": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR.Tests\\HYMAPSOPIR.Tests.csproj",
       "projectName": "HYMAPSOPIR.Tests",
-      "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR.Tests\\HYMAPSOPIR.Tests.csproj",
+      "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR.Tests\\HYMAPSOPIR.Tests.csproj",
       "packagesPath": "C:\\Users\\firdaus-macbook\\.nuget\\packages\\",
-      "outputPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR.Tests\\obj\\",
+      "outputPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2760,14 +2760,14 @@
         "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "C:\\HYMAPSOPIR REVISI 10 JUNI\\API\\API.csproj": {
-              "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\API\\API.csproj"
+            "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj": {
+              "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj"
             },
-            "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj": {
-              "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj"
+            "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj": {
+              "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj"
             },
-            "C:\\HYMAPSOPIR REVISI 10 JUNI\\Library\\Library.csproj": {
-              "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\Library\\Library.csproj"
+            "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj": {
+              "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj"
             }
           }
         }

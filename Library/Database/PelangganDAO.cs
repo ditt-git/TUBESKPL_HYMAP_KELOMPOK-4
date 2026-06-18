@@ -13,7 +13,7 @@ namespace Library.Database
             using (MySqlConnection conn = Koneksi.Instance.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT id_pelanggan, nama_pelanggan, alamat, id_armada, tanggal_terakhir_kirim, galon_dipinjam FROM pelanggan";
+                string query = "SELECT id_pelanggan, nama_pelanggan, alamat, id_armada, tanggal_terakhir_kirim, galon_dipinjam FROM pelanggan WHERE is_active = 1";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 using (MySqlDataReader reader = cmd.ExecuteReader())

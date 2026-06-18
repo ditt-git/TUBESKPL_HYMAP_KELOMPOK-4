@@ -15,88 +15,58 @@ namespace Library.Database
                 int idPelangganInt = int.Parse(tugas.DataPelanggan.IdPelanggan.Substring(1));
                 string tglFormat = tugas.TanggalTugas.ToString("yyyy-MM-dd");
 
-                // Ambil id_pengiriman dari jadwal_pengiriman
+                // (Mencegah Jadwal Kembar akibat Double-Click)
+                
+                string queryInsertJadwal = @"
+                    INSERT IGNORE INTO jadwal_pengiriman (tanggal_pengiriman, jumlah_pesanan, is_prioritas, id_pelanggan, id_user) 
+                    VALUES (@tanggalTugas, @jumlahPesanan, 0, @idPelanggan, @idUser)";
+                    
+                using (MySqlCommand cmdInsert = new MySqlCommand(queryInsertJadwal, conn))
+                {
+                    cmdInsert.Parameters.AddWithValue("@tanggalTugas", tglFormat);
+                    cmdInsert.Parameters.AddWithValue("@jumlahPesanan", tugas.DataPelanggan.GalonDipinjam > 0 ? tugas.DataPelanggan.GalonDipinjam : 1);
+                    cmdInsert.Parameters.AddWithValue("@idPelanggan", idPelangganInt);
+                    cmdInsert.Parameters.AddWithValue("@idUser", tugas.IdUserSopir);
+                    cmdInsert.ExecuteNonQuery();
+                }
+
+                // dapat 1 ID saja
                 string queryGetId = @"SELECT id_pengiriman FROM jadwal_pengiriman 
                                       WHERE id_pelanggan = @idPelanggan AND tanggal_pengiriman = @tanggalTugas
                                       ORDER BY id_pengiriman DESC LIMIT 1";
-
-                int? idPengiriman = null;
+                                      
+                int idPengiriman;
                 using (MySqlCommand cmd = new MySqlCommand(queryGetId, conn))
                 {
                     cmd.Parameters.AddWithValue("@idPelanggan", idPelangganInt);
                     cmd.Parameters.AddWithValue("@tanggalTugas", tglFormat);
-                    var result = cmd.ExecuteScalar();
-                    if (result != null && result != DBNull.Value)
-                    {
-                        idPengiriman = Convert.ToInt32(result);
-                    }
+                    idPengiriman = Convert.ToInt32(cmd.ExecuteScalar());
                 }
 
-                if (idPengiriman == null)
-                {
-                    // Jika jadwal pengiriman belum ada, buat jadwal baru secara otomatis
-                    string queryInsertJadwal = @"INSERT INTO jadwal_pengiriman (tanggal_pengiriman, jumlah_pesanan, is_prioritas, id_pelanggan, id_user) 
-                                                 VALUES (@tanggalTugas, @jumlahPesanan, 0, @idPelanggan, @idUser)";
-                    using (MySqlCommand cmdInsert = new MySqlCommand(queryInsertJadwal, conn))
-                    {
-                        cmdInsert.Parameters.AddWithValue("@tanggalTugas", tglFormat);
-                        cmdInsert.Parameters.AddWithValue("@jumlahPesanan", tugas.DataPelanggan.GalonDipinjam > 0 ? tugas.DataPelanggan.GalonDipinjam : 1);
-                        cmdInsert.Parameters.AddWithValue("@idPelanggan", idPelangganInt);
-                        cmdInsert.Parameters.AddWithValue("@idUser", (int)tugas.DataPelanggan.Wilayah + 1);
-                        cmdInsert.ExecuteNonQuery();
-                        idPengiriman = Convert.ToInt32(cmdInsert.LastInsertedId);
-                    }
-                }
+            
+                // Menggunakan ON DUPLICATE KEY UPDATE untuk memastikan tidak ada 2 Laporan
+                string queryUpsert = @"
+                    INSERT INTO laporan (id_pengiriman, waktu_submit, status_pengiriman, status_pembayaran, galon_kembali) 
+                    VALUES (@idPengiriman, @waktuSubmit, @statusKirim, @statusBayar, @galonKembali)
+                    ON DUPLICATE KEY UPDATE 
+                        status_pengiriman = @statusKirim,
+                        status_pembayaran = @statusBayar,
+                        galon_kembali = @galonKembali,
+                        waktu_submit = @waktuSubmit";
 
-                // Cek apakah laporan sudah ada untuk id_pengiriman ini
-                string queryCek = @"SELECT id_laporan FROM laporan WHERE id_pengiriman = @idPengiriman ORDER BY id_laporan DESC LIMIT 1";
-                int? existingLaporanId = null;
-                using (MySqlCommand cmd = new MySqlCommand(queryCek, conn))
+                using (MySqlCommand cmd = new MySqlCommand(queryUpsert, conn))
                 {
-                    cmd.Parameters.AddWithValue("@idPengiriman", idPengiriman.Value);
-                    var result = cmd.ExecuteScalar();
-                    if (result != null && result != DBNull.Value)
-                    {
-                        existingLaporanId = Convert.ToInt32(result);
-                    }
-                }
+                    cmd.Parameters.AddWithValue("@idPengiriman", idPengiriman);
+                    cmd.Parameters.AddWithValue("@waktuSubmit", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                    cmd.Parameters.AddWithValue("@statusKirim", tugas.StatusKirim.ToString());
+                    cmd.Parameters.AddWithValue("@statusBayar", tugas.StatusBayar.ToString());
+                    cmd.Parameters.AddWithValue("@galonKembali", tugas.GalonKembali);
 
-                if (existingLaporanId != null)
-                {
-                    // UPDATE laporan yang sudah ada
-                    string queryUpdate = @"UPDATE laporan SET status_pengiriman = @statusKirim, status_pembayaran = @statusBayar, 
-                                           bukti_foto = @buktiFoto, galon_kembali = @galonKembali 
-                                           WHERE id_laporan = @idLaporan";
-                    using (MySqlCommand cmd = new MySqlCommand(queryUpdate, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@statusKirim", tugas.StatusKirim.ToString());
-                        cmd.Parameters.AddWithValue("@statusBayar", tugas.StatusBayar.ToString());
-                        cmd.Parameters.AddWithValue("@buktiFoto", string.IsNullOrEmpty(tugas.BuktiFoto) ? DBNull.Value : (object)tugas.BuktiFoto);
-                        cmd.Parameters.AddWithValue("@galonKembali", tugas.GalonKembali);
-                        cmd.Parameters.AddWithValue("@idLaporan", existingLaporanId.Value);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-                else
-                {
-                    // INSERT laporan baru
-                    string queryInsert = @"INSERT INTO laporan (id_pengiriman, waktu_submit, status_pengiriman, status_pembayaran, bukti_foto, galon_kembali) 
-                                           VALUES (@idPengiriman, @waktuSubmit, @statusKirim, @statusBayar, @buktiFoto, @galonKembali)";
-                    using (MySqlCommand cmd = new MySqlCommand(queryInsert, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@idPengiriman", idPengiriman.Value);
-                        cmd.Parameters.AddWithValue("@waktuSubmit", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                        cmd.Parameters.AddWithValue("@statusKirim", tugas.StatusKirim.ToString());
-                        cmd.Parameters.AddWithValue("@statusBayar", tugas.StatusBayar.ToString());
-                        cmd.Parameters.AddWithValue("@buktiFoto", string.IsNullOrEmpty(tugas.BuktiFoto) ? DBNull.Value : (object)tugas.BuktiFoto);
-                        cmd.Parameters.AddWithValue("@galonKembali", tugas.GalonKembali);
-                        cmd.ExecuteNonQuery();
-                    }
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
 
-        // Menyimpan tanggal terakhir kirim ke database agar persisten setelah logout
         public static void UpdateTanggalTerakhirKirim(string idPelangganFormatted, DateTime tanggalKirim)
         {
             int idPelangganInt = int.Parse(idPelangganFormatted.Substring(1));
@@ -114,11 +84,11 @@ namespace Library.Database
             }
         }
 
-        public static bool CekStatusLaporan(string idPelangganFormatted, DateTime tanggalTugas, out StatusPengiriman statusKirim, out StatusPembayaran statusBayar, out string buktiFoto)
+        public static bool CekStatusLaporan(string idPelangganFormatted, DateTime tanggalTugas, out StatusPengiriman statusKirim, out StatusPembayaran statusBayar)
         {
             statusKirim = StatusPengiriman.BelumTerkirim;
             statusBayar = StatusPembayaran.Bon;
-            buktiFoto = "";
+
 
             int idPelangganInt = int.Parse(idPelangganFormatted.Substring(1));
 
@@ -126,7 +96,7 @@ namespace Library.Database
             {
                 conn.Open();
                 // Mengambil laporan terbaru untuk pelanggan ini pada hari ini
-                string query = @"SELECT l.status_pengiriman, l.status_pembayaran, l.bukti_foto 
+                string query = @"SELECT l.status_pengiriman, l.status_pembayaran 
                          FROM laporan l
                          JOIN jadwal_pengiriman j ON l.id_pengiriman = j.id_pengiriman
                          WHERE j.id_pelanggan = @idPelanggan 
@@ -144,7 +114,7 @@ namespace Library.Database
                         {
                             Enum.TryParse(reader["status_pengiriman"].ToString(), out statusKirim);
                             Enum.TryParse(reader["status_pembayaran"].ToString(), out statusBayar);
-                            buktiFoto = reader["bukti_foto"] != DBNull.Value ? reader["bukti_foto"].ToString() : "";
+
                             return true;
                         }
                     }

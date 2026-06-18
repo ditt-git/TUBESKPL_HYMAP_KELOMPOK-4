@@ -14,13 +14,14 @@ namespace HYMAPSOPIR
 
     public class Sopir : EntitasDasar<string>
     {
+        public int IdUserDb { get; }
         public string Nama { get; }
         public string Username { get; }
         public string Password { get; }
         public Armada ArmadaTugas { get; }
         public List<Pengiriman> DaftarTugasHariIni;
 
-        public Sopir(string nama, string username, string password, Armada armada)
+        public Sopir(int idUserDb, string nama, string username, string password, Armada armada)
         {
             Debug.Assert(!string.IsNullOrWhiteSpace(nama), "FATAL: Nama sopir tidak boleh null/kosong!");
             Debug.Assert(!string.IsNullOrWhiteSpace(username), "FATAL: Username tidak boleh null/kosong!");
@@ -29,6 +30,7 @@ namespace HYMAPSOPIR
             if (string.IsNullOrWhiteSpace(nama)) throw new ArgumentException("Nama tidak boleh kosong.");
             if (string.IsNullOrWhiteSpace(username)) throw new ArgumentException("Username tidak boleh kosong.");
 
+            IdUserDb = idUserDb;
             Id = username;
             Nama = nama;
             Username = username;

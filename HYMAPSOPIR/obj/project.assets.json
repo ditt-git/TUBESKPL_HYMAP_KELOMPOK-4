@@ -447,11 +447,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj",
+      "projectUniqueName": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj",
       "projectName": "HYMAPSOPIR - VIEW",
-      "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj",
+      "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\HYMAPSOPIR - VIEW.csproj",
       "packagesPath": "C:\\Users\\firdaus-macbook\\.nuget\\packages\\",
-      "outputPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\HYMAPSOPIR\\obj\\",
+      "outputPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\HYMAPSOPIR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -472,11 +472,11 @@
         "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "C:\\HYMAPSOPIR REVISI 10 JUNI\\API\\API.csproj": {
-              "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\API\\API.csproj"
+            "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj": {
+              "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\API\\API.csproj"
             },
-            "C:\\HYMAPSOPIR REVISI 10 JUNI\\Library\\Library.csproj": {
-              "projectPath": "C:\\HYMAPSOPIR REVISI 10 JUNI\\Library\\Library.csproj"
+            "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj": {
+              "projectPath": "C:\\TUBESKPL_HYMAP_KELOMPOK-4\\Library\\Library.csproj"
             }
           }
         }
