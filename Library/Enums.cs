@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace HYMAPSOPIR
 {
@@ -19,7 +19,7 @@ namespace HYMAPSOPIR
         Normal, Terlambat, Darurat
     }
 
-    public enum Armada
+    public enum Wilayah
     {
         Denpasar,
         Karangasem,

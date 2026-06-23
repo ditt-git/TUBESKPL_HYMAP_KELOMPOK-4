@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\Admin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A315F99C-037E-687F-5376-8EFA338F3D2E}|Admin\\Admin.csproj|c:\\users\\asus rog\\tubeskpl_hymap_kelompok-4\\admin\\admin\\armada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A315F99C-037E-687F-5376-8EFA338F3D2E}|Admin\\Admin.csproj|solutionrelative:admin\\armada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A315F99C-037E-687F-5376-8EFA338F3D2E}|Admin\\Admin.csproj|c:\\users\\asus rog\\tubeskpl_hymap_kelompok-4\\admin\\admin\\library\\commands\\commandinvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A315F99C-037E-687F-5376-8EFA338F3D2E}|Admin\\Admin.csproj|solutionrelative:admin\\library\\commands\\commandinvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommandInvoker.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\Admin\\Admin\\Library\\Commands\\CommandInvoker.cs",
+              "RelativeDocumentMoniker": "Admin\\Library\\Commands\\CommandInvoker.cs",
+              "ToolTip": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\Admin\\Admin\\Library\\Commands\\CommandInvoker.cs",
+              "RelativeToolTip": "Admin\\Library\\Commands\\CommandInvoker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T15:10:23.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Armada.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\Admin\\Admin\\Armada.cs",
+              "RelativeDocumentMoniker": "Admin\\Armada.cs",
+              "ToolTip": "C:\\Users\\ASUS ROG\\TUBESKPL_HYMAP_KELOMPOK-4\\Admin\\Admin\\Armada.cs [Design]",
+              "RelativeToolTip": "Admin\\Armada.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T15:10:14.466Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

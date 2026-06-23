@@ -22,7 +22,7 @@ namespace HYMAPSOPIR.Tests
         public void DetailPengiriman_BisaDiinisialisasiTanpaCrash()
         {
             // Arrange
-            Pelanggan dummyPelanggan = new Pelanggan("P1", "Test", "Alamat", Armada.Denpasar, DateTime.Now, 0);
+            Pelanggan dummyPelanggan = new Pelanggan("P1", "Test", "Alamat", Wilayah.Denpasar, DateTime.Now, 0);
 
             Pengiriman dummyTugas = new Pengiriman(dummyPelanggan, DateTime.Now, 1);
 

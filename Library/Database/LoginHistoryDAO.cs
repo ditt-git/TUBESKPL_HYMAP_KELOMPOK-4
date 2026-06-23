@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MySql.Data.MySqlClient;
 
 namespace Library.Database
@@ -28,7 +28,9 @@ namespace Library.Database
             {
                 conn.Open();
                 string query = @"INSERT INTO history_login (id_user, waktu_login) 
-                         SELECT id_user, NOW() FROM user WHERE username = @username";
+                                 SELECT id_user, NOW() 
+                                 FROM user 
+                                 WHERE username = @username AND is_active = 1";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {

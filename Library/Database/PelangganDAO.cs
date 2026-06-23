@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using HYMAPSOPIR;
@@ -13,7 +13,7 @@ namespace Library.Database
             using (MySqlConnection conn = Koneksi.Instance.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT id_pelanggan, nama_pelanggan, alamat, id_armada, tanggal_terakhir_kirim, galon_dipinjam FROM pelanggan WHERE is_active = 1";
+                string query = "SELECT id_pelanggan, nama_pelanggan, alamat, id_wilayah, tanggal_terakhir_kirim, galon_dipinjam FROM pelanggan WHERE is_active = 1";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -23,8 +23,8 @@ namespace Library.Database
                         int idDb = Convert.ToInt32(reader["id_pelanggan"]);
                         string formatId = "P" + idDb.ToString("D3");
 
-                        int idArmadaDb = reader["id_armada"] != DBNull.Value ? Convert.ToInt32(reader["id_armada"]) : 1;
-                        Armada armada = (Armada)(idArmadaDb - 1);
+                        int idWilayahDb = reader["id_wilayah"] != DBNull.Value ? Convert.ToInt32(reader["id_wilayah"]) : 1;
+                        Wilayah wilayah = Enum.IsDefined(typeof(Wilayah), idWilayahDb - 1) ? (Wilayah)(idWilayahDb - 1) : Wilayah.Denpasar;
 
                         DateTime tglTerakhir;
                         if (reader["tanggal_terakhir_kirim"] != DBNull.Value)
@@ -42,7 +42,7 @@ namespace Library.Database
                             formatId,
                             reader["nama_pelanggan"].ToString(),
                             reader["alamat"].ToString(),
-                            armada,
+                            wilayah,
                             tglTerakhir,
                             galonPinjamDb
                         ));

@@ -29,7 +29,7 @@ namespace HYMAPSOPIR
 
             // Tampilkan nama dan armada
             lblNamaSopir.Text = sopirAktif.Nama;
-            lblArmada.Text = sopirAktif.ArmadaTugas.ToString();
+            lblArmada.Text = sopirAktif.WilayahTugas.ToString();
 
             // Tampilkan daftar pengiriman
             BindDataPengiriman();
@@ -40,7 +40,7 @@ namespace HYMAPSOPIR
         {
             databasePelanggan = Library.Database.PelangganDAO.GetAllPelanggan();
 
-            this.serviceJadwal.SetTugasBerdasarkanArmada(this.sopirAktif, databasePelanggan, currentDate);
+            this.serviceJadwal.SetTugasBerdasarkanWilayah(this.sopirAktif, databasePelanggan, currentDate);
 
             var listTugas = sopirAktif.DaftarTugasHariIni;
             var displayList = new List<object>();
@@ -49,6 +49,7 @@ namespace HYMAPSOPIR
             foreach (var tugas in listTugas)
             {
                 // Attach observer pattern 
+                tugas.ClearObservers();
                 tugas.Attach(this);
                 tugas.Attach(_audioObserver);
 

@@ -9,14 +9,14 @@ namespace HYMAPSOPIR.Tests
     public class SopirTests
     {
         // ---------------------------------------------------------
-        // 1. CONSTRUCTOR & SERVICE TEST: SetTugasBerdasarkanArmada
+        // 1. CONSTRUCTOR & SERVICE TEST: SetTugasBerdasarkanWilayah
         // ---------------------------------------------------------
 
         [TestMethod]
         public void ConstructorSopir_DataValid_BerhasilDibuat()
         {
             // Act
-            Sopir sopirBaru = new Sopir(1, "Andi", "andi_id", "123", Armada.Denpasar);
+            Sopir sopirBaru = new Sopir(1, "Andi", "andi_id", "123", Wilayah.Denpasar);
 
             // Assert
             Assert.AreEqual("andi_id", sopirBaru.Id);
@@ -29,7 +29,7 @@ namespace HYMAPSOPIR.Tests
             try
             {
                 // ACT
-                Sopir sopirGagal = new Sopir(2, "", "username", "pass", Armada.Denpasar);
+                Sopir sopirGagal = new Sopir(2, "", "username", "pass", Wilayah.Denpasar);
                 Assert.Fail("Validasi gagal! Objek Sopir berhasil dibuat padahal namanya kosong.");
             }
             catch (ArgumentException)
@@ -49,11 +49,11 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void SetTugas_DataPelangganNull_BypassSistemAman()
         {
-            Sopir sopir = new Sopir(3, "Budi", "budi123", "pass", Armada.Denpasar);
+            Sopir sopir = new Sopir(3, "Budi", "budi123", "pass", Wilayah.Denpasar);
             JadwalService service = new JadwalService(); 
 
             // Act
-            service.SetTugasBerdasarkanArmada(sopir, null!, DateTime.Now);
+            service.SetTugasBerdasarkanWilayah(sopir, null!, DateTime.Now);
 
             // Assert
             Assert.AreEqual(0, sopir.DaftarTugasHariIni.Count);
@@ -62,16 +62,16 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void SetTugas_AdaPelangganSesuaiRute_MasukKeDaftarTugas()
         {
-            Sopir sopir = new Sopir(4, "Budi", "budi123", "pass", Armada.Denpasar); // Rute P001, P004, P007
+            Sopir sopir = new Sopir(4, "Budi", "budi123", "pass", Wilayah.Denpasar); // Rute P001, P004, P007
             var daftarPelanggan = new List<Pelanggan>
             {
-                new Pelanggan("P001", "Tono", "Alamat", Armada.Denpasar, DateTime.Now.AddDays(-14), 0), // Valid
-                new Pelanggan("P002", "Pak RT", "Alamat", Armada.Karangasem, DateTime.Now, 0)          // Tidak Valid (Beda Rute)
+                new Pelanggan("P001", "Tono", "Alamat", Wilayah.Denpasar, DateTime.Now.AddDays(-14), 0), // Valid
+                new Pelanggan("P002", "Pak RT", "Alamat", Wilayah.Karangasem, DateTime.Now, 0)          // Tidak Valid (Beda Rute)
             };
             JadwalService service = new JadwalService();
 
             // Act
-            service.SetTugasBerdasarkanArmada(sopir, daftarPelanggan, DateTime.Now);
+            service.SetTugasBerdasarkanWilayah(sopir, daftarPelanggan, DateTime.Now);
 
             // Assert: Hanya P001 yang masuk
             Assert.AreEqual(1, sopir.DaftarTugasHariIni.Count);
@@ -85,8 +85,8 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void AmbilTugas_NomorValid_MengembalikanTugas()
         {
-            Sopir sopir = new Sopir(5, "Budi", "budi123", "pass", Armada.Denpasar);
-            Pelanggan p = new Pelanggan("P001", "Tono", "Alamat", Armada.Denpasar, DateTime.Now, 0); // Tambah 0
+            Sopir sopir = new Sopir(5, "Budi", "budi123", "pass", Wilayah.Denpasar);
+            Pelanggan p = new Pelanggan("P001", "Tono", "Alamat", Wilayah.Denpasar, DateTime.Now, 0); // Tambah 0
             sopir.DaftarTugasHariIni.Add(new Pengiriman(p, DateTime.Now, sopir.IdUserDb)); // Tambah 1 tugas manual
 
             JadwalService service = new JadwalService();
@@ -101,7 +101,7 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void AmbilTugas_NomorDiLuarBatas_MengembalikanNull()
         {
-            Sopir sopir = new Sopir(6, "Budi", "budi123", "pass", Armada.Denpasar);
+            Sopir sopir = new Sopir(6, "Budi", "budi123", "pass", Wilayah.Denpasar);
             JadwalService service = new JadwalService();
 
             // Act
@@ -136,7 +136,7 @@ namespace HYMAPSOPIR.Tests
         [TestMethod]
         public void EksekusiPengirimanCommand_Sukses_TanggalBerubah()
         {
-            Pelanggan p = new Pelanggan("P001", "Tono", "Alamat", Armada.Denpasar, DateTime.Now.AddDays(-5), 0);
+            Pelanggan p = new Pelanggan("P001", "Tono", "Alamat", Wilayah.Denpasar, DateTime.Now.AddDays(-5), 0);
             Pengiriman tugas = new Pengiriman(p, DateTime.Now, 1);
 
 
@@ -156,13 +156,13 @@ namespace HYMAPSOPIR.Tests
         [Timeout(2000)] // Batas maksimal eksekusi adalah 2 detik
         public void PerformanceTest_SetTugas_SeratusRibuData()
         {
-            Sopir sopir = new Sopir(7, "Budi", "budi123", "pass", Armada.Denpasar);
+            Sopir sopir = new Sopir(7, "Budi", "budi123", "pass", Wilayah.Denpasar);
             var dataMassal = new List<Pelanggan>();
 
             // Generate 100.000 data fiktif
             for (int i = 0; i < 100000; i++)
             {
-                dataMassal.Add(new Pelanggan($"P{i}", $"Pelanggan {i}", "Alamat", Armada.Denpasar, DateTime.Now.AddDays(-14), 0));
+                dataMassal.Add(new Pelanggan($"P{i}", $"Pelanggan {i}", "Alamat", Wilayah.Denpasar, DateTime.Now.AddDays(-14), 0));
             }
 
             JadwalService service = new JadwalService(); 
@@ -170,7 +170,7 @@ namespace HYMAPSOPIR.Tests
             // Alat ukur waktu mulai
             var stopwatch = System.Diagnostics.Stopwatch.StartNew();
 
-            service.SetTugasBerdasarkanArmada(sopir, dataMassal, DateTime.Now);
+            service.SetTugasBerdasarkanWilayah(sopir, dataMassal, DateTime.Now);
 
             // Alat ukur waktu berhenti
             stopwatch.Stop();

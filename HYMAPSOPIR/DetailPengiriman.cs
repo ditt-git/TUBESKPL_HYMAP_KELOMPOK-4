@@ -15,13 +15,11 @@ namespace HYMAPSOPIR
 
         // Mendeklarasikan event Observer
         public event EventHandler DataPengirimanDiubah;
-        private DetailPengirimanPresenter _presenter;
 
         public DetailPengiriman(Pengiriman tugas)
         {
             InitializeComponent();
             tugasPengiriman = tugas;
-            _presenter = new DetailPengirimanPresenter(tugas);
 
             radioButton1.Text = "Belum Terkirim";
             radioButton2.Text = "Sudah Terkirim";
@@ -56,14 +54,35 @@ namespace HYMAPSOPIR
         {
             try
             {
-                string metodeBayar = comboBox1.SelectedItem?.ToString() ?? "Bon";
-                int galonKembali = (int)numGalonKembali.Value;
+                StatusPengiriman statusKirimBaru;
+                if (radioButton1.Checked) statusKirimBaru = (StatusPengiriman)0;
+                else if (radioButton2.Checked) statusKirimBaru = (StatusPengiriman)1;
+                else statusKirimBaru = (StatusPengiriman)2;
 
-                _presenter.UpdateData(radioButton1.Checked, radioButton2.Checked, metodeBayar, galonKembali);
+                StatusPembayaran statusBayarBaru = StatusPembayaran.Bon;
+                if (comboBox1.SelectedItem != null)
+                {
+                    string bayar = comboBox1.SelectedItem.ToString();
+                    if (bayar == "Cash") statusBayarBaru = StatusPembayaran.Cash;
+                    else if (bayar == "Transfer") statusBayarBaru = StatusPembayaran.Transfer;
+                    else statusBayarBaru = StatusPembayaran.Bon;
+                }
+
+                int galonKembaliInput = (int)numGalonKembali.Value;
+
+                // Menggunakan Command Pattern
+                Library.Commands.ICommand updateCommand = new Library.Commands.UpdatePengirimanCommand(
+                    tugasPengiriman,
+                    statusKirimBaru,
+                    statusBayarBaru,
+                    galonKembaliInput
+                );
+
+                updateCommand.Execute();
+
 
                 MessageBox.Show("Data berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Memicu event untuk memberi tahu Dashboard bahwa data sudah diubah
                 DataPengirimanDiubah?.Invoke(this, EventArgs.Empty);
 
                 this.Close();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text.Json;
 
@@ -6,7 +6,7 @@ namespace HYMAPSOPIR
 {
     public static class appConfig
     {
-        public static bool IsMaintenanceMode { get; set; } = true;
+        public static bool IsMaintenanceMode { get; set; } = false;
         public static string MaintenanceMessage { get; set; } = "Sistem sedang maintenance!";
 
         private static string configPath = "config.json";
