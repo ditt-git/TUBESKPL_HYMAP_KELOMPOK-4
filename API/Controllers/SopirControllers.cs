@@ -29,7 +29,7 @@ namespace HYMAP.API.Controllers
 
             List<Pelanggan> dataPelangganDb = PelangganDAO.GetAllPelanggan();
 
-            _jadwalService.SetTugasBerdasarkanArmada(sopir, dataPelangganDb, tanggal);
+            _jadwalService.SetTugasBerdasarkanWilayah(sopir, dataPelangganDb, tanggal);
 
             return Ok(sopir.DaftarTugasHariIni);
         }
@@ -63,7 +63,7 @@ namespace HYMAP.API.Controllers
 
             List<Pelanggan> dataPelangganDb = PelangganDAO.GetAllPelanggan();
 
-            _jadwalService.SetTugasBerdasarkanArmada(sopir, dataPelangganDb, DateTime.Now);
+            _jadwalService.SetTugasBerdasarkanWilayah(sopir, dataPelangganDb, DateTime.Now);
 
             var tugas = sopir.DaftarTugasHariIni.FirstOrDefault(t => t.DataPelanggan.IdPelanggan == idPelanggan);
             if (tugas == null) return NotFound("Tugas pengiriman tidak ditemukan di daftar sopir.");
@@ -90,7 +90,7 @@ namespace HYMAP.API.Controllers
 
             List<Pelanggan> dataPelangganDb = PelangganDAO.GetAllPelanggan();
 
-            _jadwalService.SetTugasBerdasarkanArmada(sopir, dataPelangganDb, DateTime.Now);
+            _jadwalService.SetTugasBerdasarkanWilayah(sopir, dataPelangganDb, DateTime.Now);
 
             var tugas = sopir.DaftarTugasHariIni.FirstOrDefault(t => t.DataPelanggan.IdPelanggan == idPelanggan);
             if (tugas == null) return NotFound();

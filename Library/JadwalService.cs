@@ -9,23 +9,29 @@ namespace HYMAPSOPIR
     {
         public void CekDanGenerateJadwalHariIni(Sopir sopir, DateTime tanggalPilih)
         {
-            Library.Database.SopirDAO.GenerateJadwalSopir(sopir.Username, sopir.ArmadaTugas, tanggalPilih, sopir.IdUserDb);
+            Library.Database.SopirDAO.GenerateJadwalSopir(sopir.Username, sopir.WilayahTugas, tanggalPilih, sopir.IdUserDb);
         }
 
-        public void SetTugasBerdasarkanArmada(Sopir sopir, List<Pelanggan> semuaPelanggan, DateTime hariIni)
+        public void SetTugasBerdasarkanWilayah(Sopir sopir, List<Pelanggan> semuaPelanggan, DateTime hariIni)
         {
             if (semuaPelanggan == null) return;
 
-            string[] ruteId = RouteTable.GetRute(sopir.ArmadaTugas) ?? new string[0];
+            List<string> pelangganDitugaskan = Library.Database.SopirDAO.GetJadwalPelangganSopir(sopir.IdUserDb, hariIni);
+
+            string[] ruteId = RouteTable.GetRute(sopir.WilayahTugas, semuaPelanggan) ?? new string[0];
             bool isHariIni = hariIni.Date == DateTime.Today;
 
             var pelangganTarget = semuaPelanggan
                 .Where(p => p != null &&
-                            ruteId.Contains(p.IdPelanggan) &&
                             (
-                                p.JadwalBerikutnya().Date <= hariIni.Date ||
-                                p.TanggalTerakhirKirim.Date == hariIni.Date ||
-                                (sopir.DaftarTugasHariIni != null && sopir.DaftarTugasHariIni.Any(t => t.DataPelanggan.IdPelanggan == p.IdPelanggan && t.TanggalTugas.Date == hariIni.Date))
+                                pelangganDitugaskan.Contains(p.IdPelanggan) 
+                                ||
+                                (ruteId.Contains(p.IdPelanggan) &&
+                                 (
+                                     p.JadwalBerikutnya().Date <= hariIni.Date ||
+                                     p.TanggalTerakhirKirim.Date == hariIni.Date ||
+                                     (sopir.DaftarTugasHariIni != null && sopir.DaftarTugasHariIni.Any(t => t.DataPelanggan.IdPelanggan == p.IdPelanggan && t.TanggalTugas.Date == hariIni.Date))
+                                 ))
                             ))
                 .ToList();
 
@@ -37,17 +43,27 @@ namespace HYMAPSOPIR
 
                 if (tugasSudahAda != null)
                 {
+                    if (Library.Database.PengirimanDAO.CekStatusLaporan(p.IdPelanggan, hariIni, out StatusPengiriman stKirim2, out StatusPembayaran stBayar2, out int jmlPesanan2, out int galonKembali2))
+                    {
+                        tugasSudahAda.StatusKirim = stKirim2;
+                        tugasSudahAda.StatusBayar = stBayar2;
+                        tugasSudahAda.JumlahPesanan = jmlPesanan2;
+                        tugasSudahAda.GalonKembali = galonKembali2;
+                    }
                     tugasBaruAtauLama.Add(tugasSudahAda);
                 }
                 else
+
                 {
                     Pengiriman tugasBaru = new Pengiriman(p, hariIni, sopir.IdUserDb);
                     tugasBaru.Prioritas = PrioritasChecker.HitungPrioritas(p.JadwalBerikutnya(), hariIni);
 
-                    if (Library.Database.PengirimanDAO.CekStatusLaporan(p.IdPelanggan, hariIni, out StatusPengiriman stKirim, out StatusPembayaran stBayar))
+                    if (Library.Database.PengirimanDAO.CekStatusLaporan(p.IdPelanggan, hariIni, out StatusPengiriman stKirim, out StatusPembayaran stBayar, out int jmlPesanan, out int galonKembali))
                     {
                         tugasBaru.StatusKirim = stKirim;
                         tugasBaru.StatusBayar = stBayar;
+                        tugasBaru.JumlahPesanan = jmlPesanan;
+                        tugasBaru.GalonKembali = galonKembali;
                     }
                     tugasBaruAtauLama.Add(tugasBaru);
                 }

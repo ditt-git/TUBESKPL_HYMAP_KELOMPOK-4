@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Admin - CRUD/">
+    <Project Path="Admin/Admin/Admin.csproj" />
+  </Folder>
   <Project Path="API/API.csproj" Id="8c174750-b596-46af-ac4d-501d48994b91" />
   <Project Path="HYMAPSOPIR.Tests/HYMAPSOPIR.Tests.csproj" Id="e24ba371-d839-4f2c-8933-fc6547e791f2" />
   <Project Path="HYMAPSOPIR/HYMAPSOPIR - VIEW.csproj" />

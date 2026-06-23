@@ -20,9 +20,16 @@ namespace Library.Commands
 
         }
 
-        public void Execute()
+        public string LogMessage => $"Memperbarui status pengiriman (Pelanggan ID: {_tugasPengiriman?.DataPelanggan?.IdPelanggan}) menjadi {_statusKirimBaru}";
+
+        public bool Execute()
         {
             // DESIGN BY CONTRACT
+            if (_galonKembali < 0)
+            {
+                throw new InvalidOperationException("KONTRAK: Galon kembali tidak boleh negatif!");
+            }
+
             if (_statusKirimBaru == (StatusPengiriman)0 || _statusKirimBaru == (StatusPengiriman)2) // Belum Terkirim atau Gagal
             {
                 // Memastikan status bayar harus Bon
@@ -33,26 +40,30 @@ namespace Library.Commands
                 {
                     throw new InvalidOperationException("KONTRAK: Belum terkirim atau gagal tidak dapat pilih pembayaran selain bon!");
                 }
+
+                if (_galonKembali > 0)
+                {
+                    throw new InvalidOperationException("KONTRAK: Belum terkirim atau gagal tidak dapat mengembalikan galon!");
+                }
             }
 
             _tugasPengiriman.StatusKirim = _statusKirimBaru;
             _tugasPengiriman.StatusBayar = _statusBayarBaru;
             _tugasPengiriman.GalonKembali = _galonKembali;
 
-            if (_tugasPengiriman.StatusKirim == StatusPengiriman.SudahTerkirim)
+            Library.Database.PengirimanDAO.SimpanJadwalPengiriman(_tugasPengiriman);
+
+            // Jika status pengiriman adalah "SudahTerkirim", perbarui TanggalTerakhirKirim untuk siklus langganan 7 hari
+            if (_statusKirimBaru == StatusPengiriman.SudahTerkirim)
             {
-                // Gunakan tanggal tugas, bukan DateTime.Now, agar jadwal tidak kacau
-                DateTime tanggalKirim = _tugasPengiriman.TanggalTugas;
-                if (tanggalKirim >= _tugasPengiriman.DataPelanggan.TanggalTerakhirKirim)
+                if (_tugasPengiriman.TanggalTugas >= _tugasPengiriman.DataPelanggan.TanggalTerakhirKirim)
                 {
-                    _tugasPengiriman.DataPelanggan.UpdateTanggalPengirimanBerhasil(tanggalKirim);
-                    // Simpan juga ke database agar persisten setelah logout
-                    Library.Database.PengirimanDAO.UpdateTanggalTerakhirKirim(
-                        _tugasPengiriman.DataPelanggan.IdPelanggan, tanggalKirim);
+                    _tugasPengiriman.DataPelanggan.UpdateTanggalPengirimanBerhasil(_tugasPengiriman.TanggalTugas);
+                    Library.Database.PengirimanDAO.UpdateTanggalTerakhirKirim(_tugasPengiriman.DataPelanggan.IdPelanggan, _tugasPengiriman.TanggalTugas);
                 }
             }
 
-            Library.Database.PengirimanDAO.SimpanJadwalPengiriman(_tugasPengiriman);
+            return true;
         }
     }
 }

@@ -18,10 +18,10 @@ namespace HYMAPSOPIR
         public string Nama { get; }
         public string Username { get; }
         public string Password { get; }
-        public Armada ArmadaTugas { get; }
+        public Wilayah WilayahTugas { get; }
         public List<Pengiriman> DaftarTugasHariIni;
 
-        public Sopir(int idUserDb, string nama, string username, string password, Armada armada)
+        public Sopir(int idUserDb, string nama, string username, string password, Wilayah wilayah)
         {
             Debug.Assert(!string.IsNullOrWhiteSpace(nama), "FATAL: Nama sopir tidak boleh null/kosong!");
             Debug.Assert(!string.IsNullOrWhiteSpace(username), "FATAL: Username tidak boleh null/kosong!");
@@ -35,7 +35,7 @@ namespace HYMAPSOPIR
             Nama = nama;
             Username = username;
             Password = password;
-            ArmadaTugas = armada;
+            WilayahTugas = wilayah;
             DaftarTugasHariIni = new List<Pengiriman>();
 
         }

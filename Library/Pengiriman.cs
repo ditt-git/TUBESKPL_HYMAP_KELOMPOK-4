@@ -17,15 +17,19 @@ namespace HYMAPSOPIR
             get { return _statusKirim; }
             set
             {
-                _statusKirim = value;
-                if (_statusKirim == (StatusPengiriman)1)
+                if (_statusKirim != value) 
                 {
-                    Notify();
+                    _statusKirim = value;
+                    if (_statusKirim == (StatusPengiriman)1)
+                    {
+                        Notify();
+                    }
                 }
             }
         }
         public StatusPembayaran StatusBayar { get; set; }
         public PrioritasPengiriman Prioritas { get; set; }
+        public int JumlahPesanan { get; set; }
 
         public int GalonKembali { get; set; }
         public DateTime TanggalTugas { get; set; }
@@ -39,6 +43,7 @@ namespace HYMAPSOPIR
             DataPelanggan = pelanggan;
             StatusKirim = (StatusPengiriman)0;
             StatusBayar = StatusPembayaran.Bon;
+            JumlahPesanan = pelanggan.GalonDipinjam > 0 ? pelanggan.GalonDipinjam : 1;
 
             GalonKembali = 0;
             TanggalTugas = tanggalHariIni;
@@ -73,6 +78,11 @@ namespace HYMAPSOPIR
             {
                 observer.Update($"Pengiriman ke {DataPelanggan.NamaPelanggan} Selesai!");
             }
+        }
+
+        public void ClearObservers()
+        {
+            _observers.Clear();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Media;
 namespace HYMAPSOPIR
 {
@@ -8,14 +8,14 @@ namespace HYMAPSOPIR
         {
             try
             {
-                string audioPath = "cash-register-sound-fx.wav";
+                string audioPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "cash-register-sound-fx.wav");
 
                 using (SoundPlayer player = new SoundPlayer(audioPath))
                 {
                     player.Play();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Console.Beep(1000, 500);
             }

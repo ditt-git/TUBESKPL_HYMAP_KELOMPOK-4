@@ -6,7 +6,6 @@ namespace HYMAPSOPIR
 {
     public static class PrioritasChecker
     {
-        // Enum untuk Trigger/Event transisi prioritas
         public enum TriggerPrioritas
         {
             TepatWaktu,          // Hari telat <= 0
@@ -14,9 +13,6 @@ namespace HYMAPSOPIR
             Darurat // Hari telat >= 4 hari
         }
 
-        // Tabel Transisi State-Based dengan index 2D: [CurrentState, Trigger] -> NextState
-        // Row index: PrioritasPengiriman (Normal = 0, Terlambat = 1, Darurat = 2)
-        // Column index: TriggerPrioritas (TepatWaktu = 0, Telat 1-3 Hari = 1, Telat > 4 Hari = 2)
         private static readonly PrioritasPengiriman[,] TabelTransisi = new PrioritasPengiriman[3, 3]
         {
             // TepatWaktu                   Telat1Sampai3Hari               Telat4HariAtauLebih

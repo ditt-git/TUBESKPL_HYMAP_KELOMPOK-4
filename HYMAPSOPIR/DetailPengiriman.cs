@@ -83,7 +83,6 @@ namespace HYMAPSOPIR
 
                 MessageBox.Show("Data berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Memicu event untuk memberi tahu Dashboard bahwa data sudah diubah
                 DataPengirimanDiubah?.Invoke(this, EventArgs.Empty);
 
                 this.Close();

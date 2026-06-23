@@ -13,7 +13,7 @@ namespace HYMAPSOPIR.Tests
             // Arrange
             var daftarSopir = new List<Sopir>
             {
-                new Sopir(1, "Budi", "budi123", "pass", Armada.Gianyar)
+                new Sopir(1, "Budi", "budi123", "pass", Wilayah.Gianyar)
             };
 
             // Act

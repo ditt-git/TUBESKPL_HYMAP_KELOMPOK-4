@@ -64,7 +64,7 @@ namespace HYMAPSOPIR
             // labelAlamatPelanggan
             // 
             labelAlamatPelanggan.AutoSize = true;
-            labelAlamatPelanggan.Location = new Point(226, 96);
+            labelAlamatPelanggan.Location = new Point(226, 91);
             labelAlamatPelanggan.Name = "labelAlamatPelanggan";
             labelAlamatPelanggan.Size = new Size(50, 20);
             labelAlamatPelanggan.TabIndex = 1;
@@ -83,7 +83,7 @@ namespace HYMAPSOPIR
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(31, 96);
+            label1.Location = new Point(31, 91);
             label1.Name = "label1";
             label1.Size = new Size(68, 20);
             label1.TabIndex = 4;
@@ -144,16 +144,16 @@ namespace HYMAPSOPIR
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(31, 142);
+            label5.Location = new Point(31, 126);
             label5.Name = "label5";
             label5.Size = new Size(69, 20);
             label5.TabIndex = 11;
-            label5.Text = "Armada :";
+            label5.Text = "Wilayah :";
             // 
             // labelArmada
             // 
             labelArmada.AutoSize = true;
-            labelArmada.Location = new Point(226, 142);
+            labelArmada.Location = new Point(226, 127);
             labelArmada.Name = "labelArmada";
             labelArmada.Size = new Size(50, 20);
             labelArmada.TabIndex = 12;

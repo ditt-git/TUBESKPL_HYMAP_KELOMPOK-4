@@ -1,4 +1,4 @@
-﻿namespace HYMAPSOPIR
+namespace HYMAPSOPIR
 {
     partial class Dashboard
     {
@@ -86,7 +86,7 @@
             label2.Name = "label2";
             label2.Size = new Size(49, 15);
             label2.TabIndex = 4;
-            label2.Text = "Armada";
+            label2.Text = "Wilayah";
             // 
             // dtpTanggal
             // 

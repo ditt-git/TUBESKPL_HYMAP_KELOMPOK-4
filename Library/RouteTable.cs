@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
@@ -8,17 +8,17 @@ namespace HYMAPSOPIR
 
     public static class RouteTable
     {
-        public static string[] GetRute(Armada armada)
+        public static string[] GetRute(Wilayah wilayah, List<Pelanggan> pelangganDb)
         {
 
             string[][] tabelRute = new string[4][];
 
-            tabelRute[(int)Armada.Denpasar] = new string[] { "P001", "P004", "P005", "P006", "P007", "P008", "P009" };
-            tabelRute[(int)Armada.Karangasem] = new string[] { "P002", "P010", "P011", "P012", "P013", "P014" };
-            tabelRute[(int)Armada.Gianyar] = new string[] { "P003", "P015", "P016", "P017", "P018", "P019" };
-            tabelRute[(int)Armada.Tabanan] = new string[] { "P020", "P021", "P022", "P023", "P024" };
+            tabelRute[(int)Wilayah.Denpasar] = pelangganDb.Where(p => p.Wilayah == Wilayah.Denpasar).Select(p => p.IdPelanggan).ToArray();
+            tabelRute[(int)Wilayah.Karangasem] = pelangganDb.Where(p => p.Wilayah == Wilayah.Karangasem).Select(p => p.IdPelanggan).ToArray();
+            tabelRute[(int)Wilayah.Gianyar] = pelangganDb.Where(p => p.Wilayah == Wilayah.Gianyar).Select(p => p.IdPelanggan).ToArray();
+            tabelRute[(int)Wilayah.Tabanan] = pelangganDb.Where(p => p.Wilayah == Wilayah.Tabanan).Select(p => p.IdPelanggan).ToArray();
 
-            return tabelRute[(int)armada];
+            return tabelRute[(int)wilayah] ?? new string[0];
         }
     }
 }

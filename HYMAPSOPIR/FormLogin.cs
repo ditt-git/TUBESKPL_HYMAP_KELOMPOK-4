@@ -36,7 +36,14 @@ namespace HYMAPSOPIR
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Validasi Input Kosong
+            if (ValidationHelper.IsEmpty(textBox1.Text))
+            {
+                MessageBox.Show("Username tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox1.Focus();
+                return;
+            }
+
+            // Validasi Input Kosong menggunakan Library ValidationHelper
             if (ValidationHelper.IsEmpty(textBox2.Text))
             {
                 MessageBox.Show("Password tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -86,7 +93,7 @@ namespace HYMAPSOPIR
                 MessageBox.Show($"Selamat datang, {akunValid.Nama}!", "Login Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-                // Membuka Form dengan data sopir yang valid
+                // Membuka Form1 dengan data sopir yang valid
                 Dashboard formUtama = new Dashboard(akunValid);
 
                 this.Hide();

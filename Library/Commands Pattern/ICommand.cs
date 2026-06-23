@@ -4,6 +4,7 @@ namespace Library.Commands
 {
     public interface ICommand
     {
-        void Execute();
+        string LogMessage { get; }
+        bool Execute();
     }
 }
