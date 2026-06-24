@@ -56,16 +56,16 @@ namespace Admin
             dataGridView1.Location = new Point(12, 43);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(379, 343);
+            dataGridView1.Size = new Size(379, 387);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.RowHeaderMouseClick += dataGridView1_RowHeaderMouseClick;
             // 
             // buttonaddpelanggan
             // 
-            buttonaddpelanggan.Location = new Point(61, 403);
+            buttonaddpelanggan.Location = new Point(430, 297);
             buttonaddpelanggan.Name = "buttonaddpelanggan";
-            buttonaddpelanggan.Size = new Size(94, 29);
+            buttonaddpelanggan.Size = new Size(107, 54);
             buttonaddpelanggan.TabIndex = 2;
             buttonaddpelanggan.Text = "tambah";
             buttonaddpelanggan.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@ namespace Admin
             // 
             // buttoneditpelanggan
             // 
-            buttoneditpelanggan.Location = new Point(201, 402);
+            buttoneditpelanggan.Location = new Point(619, 297);
             buttoneditpelanggan.Name = "buttoneditpelanggan";
-            buttoneditpelanggan.Size = new Size(94, 29);
+            buttoneditpelanggan.Size = new Size(98, 54);
             buttoneditpelanggan.TabIndex = 3;
             buttoneditpelanggan.Text = "edit";
             buttoneditpelanggan.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@ namespace Admin
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(426, 293);
+            label5.Location = new Point(619, 199);
             label5.Name = "label5";
             label5.RightToLeft = RightToLeft.No;
             label5.Size = new Size(114, 20);
@@ -132,7 +132,7 @@ namespace Admin
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(608, 16);
+            label6.Location = new Point(619, 16);
             label6.Name = "label6";
             label6.Size = new Size(164, 20);
             label6.TabIndex = 9;
@@ -162,14 +162,14 @@ namespace Admin
             // 
             // galondipinjam
             // 
-            galondipinjam.Location = new Point(428, 328);
+            galondipinjam.Location = new Point(619, 241);
             galondipinjam.Name = "galondipinjam";
             galondipinjam.Size = new Size(125, 27);
             galondipinjam.TabIndex = 13;
             // 
             // idarmadapelanggan
             // 
-            idarmadapelanggan.Location = new Point(625, 146);
+            idarmadapelanggan.Location = new Point(619, 146);
             idarmadapelanggan.Name = "idarmadapelanggan";
             idarmadapelanggan.Size = new Size(125, 27);
             idarmadapelanggan.TabIndex = 15;
@@ -184,17 +184,17 @@ namespace Admin
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(641, 105);
+            label7.Location = new Point(619, 105);
             label7.Name = "label7";
-            label7.Size = new Size(77, 20);
+            label7.Size = new Size(76, 20);
             label7.TabIndex = 17;
             label7.Text = "id wilayah";
             // 
             // buttonToggleStatusPelanggan
             // 
-            buttonToggleStatusPelanggan.Location = new Point(427, 403);
+            buttonToggleStatusPelanggan.Location = new Point(619, 359);
             buttonToggleStatusPelanggan.Name = "buttonToggleStatusPelanggan";
-            buttonToggleStatusPelanggan.Size = new Size(110, 29);
+            buttonToggleStatusPelanggan.Size = new Size(98, 61);
             buttonToggleStatusPelanggan.TabIndex = 20;
             buttonToggleStatusPelanggan.Text = "Nonaktifkan";
             buttonToggleStatusPelanggan.UseVisualStyleBackColor = true;
@@ -202,9 +202,9 @@ namespace Admin
             // 
             // buttonAktifkanPelanggan
             // 
-            buttonAktifkanPelanggan.Location = new Point(549, 403);
+            buttonAktifkanPelanggan.Location = new Point(430, 359);
             buttonAktifkanPelanggan.Name = "buttonAktifkanPelanggan";
-            buttonAktifkanPelanggan.Size = new Size(110, 29);
+            buttonAktifkanPelanggan.Size = new Size(107, 61);
             buttonAktifkanPelanggan.TabIndex = 21;
             buttonAktifkanPelanggan.Text = "Aktifkan";
             buttonAktifkanPelanggan.UseVisualStyleBackColor = true;

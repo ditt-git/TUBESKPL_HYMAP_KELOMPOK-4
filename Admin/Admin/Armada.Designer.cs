@@ -61,7 +61,7 @@ namespace Admin
             // 
             // buttonedit
             // 
-            buttonedit.Location = new Point(608, 315);
+            buttonedit.Location = new Point(606, 291);
             buttonedit.Name = "buttonedit";
             buttonedit.Size = new Size(94, 29);
             buttonedit.TabIndex = 2;
