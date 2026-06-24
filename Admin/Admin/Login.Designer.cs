@@ -33,12 +33,13 @@
             Username = new TextBox();
             Passw = new TextBox();
             submit = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(245, 79);
+            label1.Location = new Point(245, 112);
             label1.Name = "label1";
             label1.Size = new Size(75, 20);
             label1.TabIndex = 0;
@@ -47,7 +48,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(245, 200);
+            label2.Location = new Point(245, 221);
             label2.Name = "label2";
             label2.Size = new Size(70, 20);
             label2.TabIndex = 1;
@@ -55,7 +56,7 @@
             // 
             // Username
             // 
-            Username.Location = new Point(248, 136);
+            Username.Location = new Point(248, 160);
             Username.Name = "Username";
             Username.Size = new Size(125, 27);
             Username.TabIndex = 2;
@@ -73,9 +74,19 @@
             submit.Name = "submit";
             submit.Size = new Size(94, 29);
             submit.TabIndex = 4;
-            submit.Text = "go";
+            submit.Text = "login";
             submit.UseVisualStyleBackColor = true;
             submit.Click += submit_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(283, 35);
+            label3.Name = "label3";
+            label3.Size = new Size(241, 41);
+            label3.TabIndex = 5;
+            label3.Text = "HYMAP ADMIN";
             // 
             // Login
             // 
@@ -83,6 +94,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 451);
+            Controls.Add(label3);
             Controls.Add(submit);
             Controls.Add(Passw);
             Controls.Add(Username);
@@ -102,5 +114,6 @@
         private TextBox Username;
         private TextBox Passw;
         private Button submit;
+        private Label label3;
     }
 }

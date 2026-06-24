@@ -54,7 +54,7 @@ namespace Admin
             dataGridView1.Location = new Point(12, 43);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(383, 325);
+            dataGridView1.Size = new Size(383, 395);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
@@ -62,9 +62,9 @@ namespace Admin
             // 
             // buttonaddsopir
             // 
-            buttonaddsopir.Location = new Point(37, 391);
+            buttonaddsopir.Location = new Point(453, 285);
             buttonaddsopir.Name = "buttonaddsopir";
-            buttonaddsopir.Size = new Size(94, 29);
+            buttonaddsopir.Size = new Size(110, 57);
             buttonaddsopir.TabIndex = 2;
             buttonaddsopir.Text = "Tambah";
             buttonaddsopir.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@ namespace Admin
             // 
             // buttoneditsopir
             // 
-            buttoneditsopir.Location = new Point(189, 391);
+            buttoneditsopir.Location = new Point(631, 285);
             buttoneditsopir.Name = "buttoneditsopir";
-            buttoneditsopir.Size = new Size(94, 29);
+            buttoneditsopir.Size = new Size(117, 57);
             buttoneditsopir.TabIndex = 3;
             buttoneditsopir.Text = "edit";
             buttoneditsopir.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@ namespace Admin
             // 
             // buttonToggleStatusSopir
             // 
-            buttonToggleStatusSopir.Location = new Point(453, 391);
+            buttonToggleStatusSopir.Location = new Point(453, 358);
             buttonToggleStatusSopir.Name = "buttonToggleStatusSopir";
-            buttonToggleStatusSopir.Size = new Size(110, 29);
+            buttonToggleStatusSopir.Size = new Size(111, 62);
             buttonToggleStatusSopir.TabIndex = 15;
             buttonToggleStatusSopir.Text = "Nonaktifkan";
             buttonToggleStatusSopir.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@ namespace Admin
             // 
             // buttonAktifkanSopir
             // 
-            buttonAktifkanSopir.Location = new Point(575, 391);
+            buttonAktifkanSopir.Location = new Point(631, 358);
             buttonAktifkanSopir.Name = "buttonAktifkanSopir";
-            buttonAktifkanSopir.Size = new Size(110, 29);
+            buttonAktifkanSopir.Size = new Size(117, 62);
             buttonAktifkanSopir.TabIndex = 16;
             buttonAktifkanSopir.Text = "Aktifkan";
             buttonAktifkanSopir.UseVisualStyleBackColor = true;
@@ -139,7 +139,7 @@ namespace Admin
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(462, 293);
+            label5.Location = new Point(638, 102);
             label5.Name = "label5";
             label5.Size = new Size(70, 20);
             label5.TabIndex = 8;
@@ -151,7 +151,7 @@ namespace Admin
             label6.Location = new Point(649, 18);
             label6.Name = "label6";
             label6.RightToLeft = RightToLeft.No;
-            label6.Size = new Size(77, 20);
+            label6.Size = new Size(76, 20);
             label6.TabIndex = 9;
             label6.Text = "Id wilayah";
             label6.Click += label6_Click;
@@ -181,7 +181,7 @@ namespace Admin
             // 
             // pwsopir
             // 
-            pwsopir.Location = new Point(452, 341);
+            pwsopir.Location = new Point(638, 139);
             pwsopir.Name = "pwsopir";
             pwsopir.Size = new Size(125, 27);
             pwsopir.TabIndex = 13;
